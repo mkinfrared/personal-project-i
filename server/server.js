@@ -5,7 +5,8 @@ const express       = require('express'),
 	  massive       = require('massive'),
 	  passport      = require('passport'),
 	  session       = require('express-session'),
-	  Auth0Strategy = require('passport-auth0');
+	  Auth0Strategy = require('passport-auth0'),
+	  mc            = require('./controllers/moviesController/moviesControllers');
 
 const {
 		  CONNECTION_STRING,
@@ -85,5 +86,13 @@ app.get('/auth/me', (req, res) => {
 		res.status(401).send('Nice try suckkkkaaa');
 	}
 });
+
+// MOVIE CONTROLLERS
+
+app.post('/api/movie/add_movie', mc.addMovie);
+app.put('/api/movie/update_movie', mc.updateMovie);
+app.delete('/api/movie/delete_movie', mc.deleteMovie);
+app.get('/api/movie/:movie_id', mc.getMovie);
+app.get('/api/movies', mc.getAllMovies);
 
 app.listen(SERVER_PORT, () => console.log(`Working on port ${SERVER_PORT}`));

@@ -1,0 +1,3 @@
+DELETE FROM movie
+WHERE id = $1
+RETURNING *;
