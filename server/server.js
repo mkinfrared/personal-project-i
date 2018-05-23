@@ -46,9 +46,21 @@ passport.use(new Auth0Strategy({
 	callbackURL : CALLBACK_URL,
 	scope       : 'openid profile email'
 }, (accessToken, refreshToken, extraParams, profile, done) => {
-	let db = app.get('db');
-	console.log(profile);
-	done(null, profile);
+	const db = app.get('db');
+
+	const {sub, nickname, given_name, family_name, email, gender, picture} = profile._json;
+
+	db.userDB.findUser([sub]).then((user) => {
+		if (user[0]) {
+			done(null, user[0].id);
+		} else {
+			db.userDB.addUser([sub, nickname, given_name, family_name, email, gender, picture])
+			  .then((user) => {
+				  done(null, user[0].id);
+			  })
+			  .catch((err) => console.error(err));
+		}
+	});
 }));
 
 passport.serializeUser((profile, done) => {
@@ -60,9 +72,18 @@ passport.deserializeUser((profile, done) => {
 });
 
 app.get('/login', passport.authenticate('auth0'));
+
 app.get('/auth/callback', passport.authenticate('auth0', {
-	successRedirect: 'http://localhost:3000',
+	successRedirect: 'http://localhost:3000/#/',
 	failureRedirect: 'http:://localhost:3000/login'
 }));
+
+app.get('/auth/me', (req, res) => {
+	if (req.user) {
+		res.status(200).send(req.user);
+	} else {
+		res.status(401).send('Nice try suckkkkaaa');
+	}
+});
 
 app.listen(SERVER_PORT, () => console.log(`Working on port ${SERVER_PORT}`));
