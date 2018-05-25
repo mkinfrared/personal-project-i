@@ -6,7 +6,8 @@ const express       = require('express'),
 	  passport      = require('passport'),
 	  session       = require('express-session'),
 	  Auth0Strategy = require('passport-auth0'),
-	  mc            = require('./controllers/moviesController/moviesControllers');
+	  mc            = require('./controllers/moviesController/moviesControllers'),
+	  ac            = require('./controllers/auditoriumController/auditoriumController');
 
 const {
 		  CONNECTION_STRING,
@@ -94,5 +95,10 @@ app.put('/api/movie/update_movie', mc.updateMovie);
 app.delete('/api/movie/delete_movie', mc.deleteMovie);
 app.get('/api/movie/:movie_id', mc.getMovie);
 app.get('/api/movies', mc.getAllMovies);
+app.get('/api/movies/movies_on_screen', mc.getMoviesOnScreen);
+
+// AUDITORIUM CONTROLLERS
+
+app.get('/api/auditorium/get_auditoriums', ac.getAuditoriums);
 
 app.listen(SERVER_PORT, () => console.log(`Working on port ${SERVER_PORT}`));

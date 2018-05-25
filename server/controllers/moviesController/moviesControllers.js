@@ -2,7 +2,9 @@ module.exports = {
 
 	addMovie: (req, res, next) => {
 		const db = req.app.get('db');
+
 		console.log(req.body);
+
 		let {
 				title, director, cast, writer, studio,
 				description, duration_min, genre, mpaa,
@@ -88,6 +90,24 @@ module.exports = {
 			  } else {
 				  res.status(404).send('Nothing found');
 			  }
+		  })
+		  .catch((err) => res.status(500).send(err));
+	},
+
+	getMoviesOnScreen: (req, res, next) => {
+		const db = req.app.get('db');
+
+		db.movieDB.moviesOnScreen()
+		  .then((movieList) => {
+			  if (movieList.length) {
+				  res.status(200).send(movieList);
+			  } else {
+				  res.status(404).send('Nothing found');
+			  }
+		  })
+		  .catch((err) => {
+			  console.log(err);
+			  res.status(500).send(err);
 		  });
 	}
 };
