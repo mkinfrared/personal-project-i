@@ -1,28 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8e64669d-6fcd-4945-8484-4535f65bec04" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/db/auditoriumDB/findAuditoriums.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/movieDB/moviesOnScreen.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/reset.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/controllers/auditoriumController/auditoriumController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Admin/AddMovie/AddMovie.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Admin/AddScreening/AddScreening.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Admin/AddScreening/AuditoriumOptions.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Admin/AddScreening/MovieOptions.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Nav/Nav.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ducks/screening_reducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store.js" afterDir="false" />
+    <list default="true" id="8e64669d-6fcd-4945-8484-4535f65bec04" name="Default" comment="added screening controllers">
+      <change afterPath="$PROJECT_DIR$/db/screeningDB/checkAvailability.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/screeningDB/createScreening.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/screeningDB/getAllScreenings.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/screeningDB/getScreeningByID.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/screeningDB/removeScreening.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/screeningDB/template.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/screeningDB/test.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/screeningDB/updateScreeningInfo.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nodemon.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/controllers/screeningController/screeningController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/69f252ed-db2e-4bcd-9ce1-b9e56f27002a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/69f252ed-db2e-4bcd-9ce1-b9e56f27002a.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/69f252ed-db2e-4bcd-9ce1-b9e56f27002a/storage_v2/_src_/database/d2c4hvp7vmap73.VmRGPQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/69f252ed-db2e-4bcd-9ce1-b9e56f27002a/storage_v2/_src_/database/d2c4hvp7vmap73.VmRGPQ/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/moviesController/moviesControllers.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/moviesController/moviesControllers.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Admin/AddScreening/AddScreening.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin/AddScreening/AddScreening.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Admin/AddScreening/AuditoriumOptions.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin/AddScreening/AuditoriumOptions.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -82,19 +79,26 @@
         <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
         <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="d2c4hvp7vmap73@ec2-23-21-129-50.compute-1.amazonaws.com" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="d2c4hvp7vmap73: database" type="6d9b600a:PostgresImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="screening: table" type="a93d6ac6:PostgresImplModel$LocalTable" />
+      </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MovieOptions.jsx" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/Admin/AddScreening/MovieOptions.jsx">
+      <file leaf-file-name="scratch.es6" pinned="false" current-in-tab="true">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.es6">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="286">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -105,9 +109,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="React Component" />
         <option value="JavaScript File" />
         <option value="Database" />
-        <option value="React Component" />
       </list>
     </option>
   </component>
@@ -124,7 +128,6 @@
         <option value="$PROJECT_DIR$/db/userDB/addUser.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/69f252ed-db2e-4bcd-9ce1-b9e56f27002a/console_3.sql" />
         <option value="$PROJECT_DIR$/db/movieDB/addMovie.sql" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.es6" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/69f252ed-db2e-4bcd-9ce1-b9e56f27002a/console_4.sql" />
         <option value="$PROJECT_DIR$/db/movieDB/addMovieToDB.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/69f252ed-db2e-4bcd-9ce1-b9e56f27002a/console_5.sql" />
@@ -148,10 +151,22 @@
         <option value="$PROJECT_DIR$/db/movieDB/moviesOnScreen.sql" />
         <option value="$PROJECT_DIR$/server/controllers/moviesController/moviesControllers.js" />
         <option value="$PROJECT_DIR$/src/ducks/screening_reducer.js" />
+        <option value="$PROJECT_DIR$/src/components/Admin/AddScreening/MovieOptions.jsx" />
+        <option value="$PROJECT_DIR$/db/screeningDB/getAllScreenings.sql" />
+        <option value="$PROJECT_DIR$/server/server.js" />
+        <option value="$PROJECT_DIR$/db/screeningDB/removeScreening.sql" />
+        <option value="$PROJECT_DIR$/db/screeningDB/template.sql" />
+        <option value="$PROJECT_DIR$/db/screeningDB/createScreening.sql" />
         <option value="$PROJECT_DIR$/src/components/Admin/AddScreening/AuditoriumOptions.jsx" />
         <option value="$PROJECT_DIR$/src/components/Admin/AddScreening/AddScreening.jsx" />
-        <option value="$PROJECT_DIR$/server/server.js" />
-        <option value="$PROJECT_DIR$/src/components/Admin/AddScreening/MovieOptions.jsx" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.es6" />
+        <option value="$PROJECT_DIR$/nodemon.json" />
+        <option value="$PROJECT_DIR$/db/screeningDB/checkAvailability.sql" />
+        <option value="$PROJECT_DIR$/db/screeningDB/test.sql" />
+        <option value="$PROJECT_DIR$/db/screeningDB/getScreeningByID.sql" />
+        <option value="$PROJECT_DIR$/server/controllers/screeningController/screeningController.js" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/69f252ed-db2e-4bcd-9ce1-b9e56f27002a/console.sql" />
+        <option value="$PROJECT_DIR$/db/screeningDB/updateScreeningInfo.sql" />
       </list>
     </option>
   </component>
@@ -176,10 +191,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-13" />
-    <option name="y" value="-16" />
-    <option name="width" value="1918" />
-    <option name="height" value="1047" />
+    <option name="x" value="-15" />
+    <option name="y" value="-20" />
+    <option name="width" value="1920" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -208,6 +223,12 @@
             <path>
               <item name="personal-project-i" type="b2602c69:ProjectViewProjectNode" />
               <item name="personal-project-i" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+              <item name="screeningDB" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="personal-project-i" type="b2602c69:ProjectViewProjectNode" />
+              <item name="personal-project-i" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -226,46 +247,24 @@
             <path>
               <item name="personal-project-i" type="b2602c69:ProjectViewProjectNode" />
               <item name="personal-project-i" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="personal-project-i" type="b2602c69:ProjectViewProjectNode" />
-              <item name="personal-project-i" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="personal-project-i" type="b2602c69:ProjectViewProjectNode" />
-              <item name="personal-project-i" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="personal-project-i" type="b2602c69:ProjectViewProjectNode" />
-              <item name="personal-project-i" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Admin" type="462c0819:PsiDirectoryNode" />
-              <item name="AddMovie" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="personal-project-i" type="b2602c69:ProjectViewProjectNode" />
-              <item name="personal-project-i" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Admin" type="462c0819:PsiDirectoryNode" />
-              <item name="AddScreening" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="personal-project-i" type="b2602c69:ProjectViewProjectNode" />
-              <item name="personal-project-i" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ducks" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="screeningController" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="personal-project-i" type="b2602c69:ProjectViewProjectNode" />
               <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+            </path>
+            <path>
+              <item name="personal-project-i" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Database Consoles" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+            </path>
+            <path>
+              <item name="personal-project-i" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Database Consoles" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+              <item name="69f252ed-db2e-4bcd-9ce1-b9e56f27002a" type="1e004dc1:ScratchProjectViewPane$MyRootNode$1$1" />
             </path>
             <path>
               <item name="personal-project-i" type="b2602c69:ProjectViewProjectNode" />
@@ -288,7 +287,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -302,15 +301,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.scratch_1.es6">
+  <component name="RunManager" selected="Node.js.scratch.es6">
     <configuration name="scratch_1.es6" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="$APPLICATION_CONFIG_DIR$/scratches/scratch_1.es6" working-dir="$PROJECT_DIR$" />
+    <configuration name="scratch.es6" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="$APPLICATION_CONFIG_DIR$/scratches/scratch.es6" working-dir="$PROJECT_DIR$" />
     <configuration name="server.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="server.js" working-dir="$PROJECT_DIR$/server" />
     <list>
       <item itemvalue="Node.js.server.js" />
       <item itemvalue="Node.js.scratch_1.es6" />
+      <item itemvalue="Node.js.scratch.es6" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.scratch.es6" />
         <item itemvalue="Node.js.scratch_1.es6" />
         <item itemvalue="Node.js.server.js" />
       </list>
@@ -333,7 +335,17 @@
       <workItem from="1527092483886" duration="298000" />
       <workItem from="1527092922057" duration="43000" />
       <workItem from="1527093114920" duration="19486000" />
-      <workItem from="1527174484278" duration="24594000" />
+      <workItem from="1527174484278" duration="25735000" />
+      <workItem from="1527228023819" duration="45000" />
+      <workItem from="1527228080960" duration="40000" />
+      <workItem from="1527228134057" duration="23000" />
+      <workItem from="1527228168744" duration="75000" />
+      <workItem from="1527228257454" duration="2041000" />
+      <workItem from="1527265565647" duration="294000" />
+      <workItem from="1527265897958" duration="15000" />
+      <workItem from="1527265954541" duration="446000" />
+      <workItem from="1527266419552" duration="16498000" />
+      <workItem from="1527369469150" duration="4534000" />
     </task>
     <task id="LOCAL-00001" summary="created database schema and file structure">
       <created>1526942514907</created>
@@ -377,26 +389,32 @@
       <option name="project" value="LOCAL" />
       <updated>1527111662993</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added screening controllers">
+      <created>1527211614905</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1527211614906</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70763000" />
+    <option name="totallyTimeSpent" value="95915000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32928178" />
-      <window_info anchor="bottom" id="Quokka" order="7" weight="0.32928178" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32928178" />
-      <window_info anchor="bottom" id="Database Console" order="7" weight="0.32928178" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1256656" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32896653" />
+      <window_info anchor="bottom" id="Quokka" order="7" weight="0.32896653" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.34497815" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13020134" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.32960597" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.33892617" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
@@ -404,10 +422,11 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32928178" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Database Console" order="7" weight="0.33190882" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32928178" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -420,76 +439,10 @@
     <MESSAGE value="created database schema and file structure" />
     <MESSAGE value="added authorization" />
     <MESSAGE value="added movie controllers" />
-    <option name="LAST_COMMIT_MESSAGE" value="added movie controllers" />
+    <MESSAGE value="added screening controllers" />
+    <option name="LAST_COMMIT_MESSAGE" value="added screening controllers" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/userDB/findUser.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1608">
-          <caret line="67" column="38" selection-start-line="67" selection-start-column="38" selection-end-line="67" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/69f252ed-db2e-4bcd-9ce1-b9e56f27002a/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="das://69f252ed-db2e-4bcd-9ce1-b9e56f27002a/role/aabxysdhotfxsg">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="6" lean-forward="true" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/userDB/findUser.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/69f252ed-db2e-4bcd-9ce1-b9e56f27002a/console_2.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/userDB/addUser.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -518,20 +471,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/69f252ed-db2e-4bcd-9ce1-b9e56f27002a/console_3.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/69f252ed-db2e-4bcd-9ce1-b9e56f27002a/console_5.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/69f252ed-db2e-4bcd-9ce1-b9e56f27002a/console_3.sql" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/69f252ed-db2e-4bcd-9ce1-b9e56f27002a/console_5.sql" />
     <entry file="file://$PROJECT_DIR$/db/movieDB/addMovieToDB.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
@@ -539,23 +480,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/69f252ed-db2e-4bcd-9ce1-b9e56f27002a/console_4.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/movieDB/updateMovieInfo.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/69f252ed-db2e-4bcd-9ce1-b9e56f27002a/console_6.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" lean-forward="true" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/69f252ed-db2e-4bcd-9ce1-b9e56f27002a/console_4.sql" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/69f252ed-db2e-4bcd-9ce1-b9e56f27002a/console_6.sql" />
     <entry file="file://$PROJECT_DIR$/db/movieDB/findAllMovies.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
@@ -563,27 +489,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/movieDB/deleteMovieFromDB.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/69f252ed-db2e-4bcd-9ce1-b9e56f27002a/console_1.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.es6">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="30" column="51" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/69f252ed-db2e-4bcd-9ce1-b9e56f27002a/console_1.sql" />
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -597,13 +503,7 @@
     <entry file="file://$PROJECT_DIR$/src/App.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.es6">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.es6" />
     <entry file="das://69f252ed-db2e-4bcd-9ce1-b9e56f27002a/database/d2c4hvp7vmap73/schema/public/table/auditorium">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -636,9 +536,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -694,20 +591,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/controllers/moviesController/moviesControllers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2424">
-          <caret line="101" column="28" selection-start-line="101" selection-start-column="28" selection-end-line="101" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Admin/AddMovie/AddMovie.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="912">
           <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -718,13 +605,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://69f252ed-db2e-4bcd-9ce1-b9e56f27002a/database/d2c4hvp7vmap73/schema/public/table/screening">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ducks/screening_reducer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-144">
@@ -732,44 +612,147 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/69f252ed-db2e-4bcd-9ce1-b9e56f27002a/console_7.sql" />
+    <entry file="file://$PROJECT_DIR$/src/components/Admin/AddScreening/MovieOptions.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/movieDB/deleteMovieFromDB.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/screeningDB/removeScreening.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/screeningDB/getAllScreenings.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/screeningDB/template.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="19" column="32" selection-end-line="21" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nodemon.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/screeningDB/checkAvailability.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/screeningDB/test.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="1" column="52" selection-start-line="1" selection-start-column="52" selection-end-line="1" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/server/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="97" column="20" selection-start-line="97" selection-start-column="20" selection-end-line="97" selection-end-column="20" />
+        <state relative-caret-position="98">
+          <caret line="108" selection-start-line="108" selection-end-line="108" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Admin/AddScreening/AuditoriumOptions.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="42" lean-forward="true" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
+        <state relative-caret-position="130">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Admin/AddScreening/AddScreening.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="30" selection-start-line="30" selection-end-line="32" selection-end-column="15" />
+        <state relative-caret-position="26">
+          <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/69f252ed-db2e-4bcd-9ce1-b9e56f27002a/console_7.sql">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/69f252ed-db2e-4bcd-9ce1-b9e56f27002a/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="23" lean-forward="true" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        <state relative-caret-position="332">
+          <caret line="28" selection-start-line="28" selection-end-line="33" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Admin/AddScreening/MovieOptions.jsx">
+    <entry file="file://$PROJECT_DIR$/db/screeningDB/updateScreeningInfo.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="130">
+          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/controllers/moviesController/moviesControllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2626">
+          <caret line="101" column="28" selection-start-line="101" selection-start-column="28" selection-end-line="101" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/screeningDB/createScreening.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="5" selection-start-line="5" selection-end-line="10" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/movieDB/updateMovieInfo.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/screeningDB/getScreeningByID.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/controllers/screeningController/screeningController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="55" column="34" lean-forward="true" selection-start-line="55" selection-start-column="34" selection-end-line="55" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://69f252ed-db2e-4bcd-9ce1-b9e56f27002a/database/d2c4hvp7vmap73/schema/public/table/screening">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.es6">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>

@@ -7,7 +7,8 @@ const express       = require('express'),
 	  session       = require('express-session'),
 	  Auth0Strategy = require('passport-auth0'),
 	  mc            = require('./controllers/moviesController/moviesControllers'),
-	  ac            = require('./controllers/auditoriumController/auditoriumController');
+	  ac            = require('./controllers/auditoriumController/auditoriumController'),
+	  sc            = require('./controllers/screeningController/screeningController');
 
 const {
 		  CONNECTION_STRING,
@@ -28,6 +29,10 @@ massive(CONNECTION_STRING)
 	.then((db) => {
 		console.log('SUCCESSFULLY CONNECTED TO THE DATABASE');
 		app.set('db', db);
+		setInterval(() => {
+			db.screeningDB.removeScreening()
+			  .then((resp) => console.log(resp));
+		}, 20 * 60 * 1000);
 	})
 	.catch((err) => console.error('FAILED TO CONNECT TO DATABASE', err));
 
@@ -100,5 +105,10 @@ app.get('/api/movies/movies_on_screen', mc.getMoviesOnScreen);
 // AUDITORIUM CONTROLLERS
 
 app.get('/api/auditorium/get_auditoriums', ac.getAuditoriums);
+
+
+// SCREENING CONTROLLERS
+
+app.post('/api/screening/create_screening', sc.addScreening);
 
 app.listen(SERVER_PORT, () => console.log(`Working on port ${SERVER_PORT}`));

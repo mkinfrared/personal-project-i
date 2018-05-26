@@ -1,9 +1,9 @@
 import React from 'react';
 
 export default function AuditoriumOptions(props) {
-	const {id, name} = props.data;
+	const {id, name, duration_min} = props.data;
 
 	return (
-		<option value={id}>{name}</option>
+		<option value={[id, duration_min]}>{name}</option>
 	)
 }
