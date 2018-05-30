@@ -8,7 +8,8 @@ const express       = require('express'),
 	  Auth0Strategy = require('passport-auth0'),
 	  mc            = require('./controllers/moviesController/moviesControllers'),
 	  ac            = require('./controllers/auditoriumController/auditoriumController'),
-	  sc            = require('./controllers/screeningController/screeningController');
+	  sc            = require('./controllers/screeningController/screeningController'),
+	  stc           = require('./controllers/seatsController/seatsController');
 
 const {
 		  CONNECTION_STRING,
@@ -110,5 +111,10 @@ app.get('/api/auditorium/get_auditoriums', ac.getAuditoriums);
 // SCREENING CONTROLLERS
 
 app.post('/api/screening/create_screening', sc.addScreening);
+
+// SEAT CONTROLLERS
+
+app.post('/api/seat/reserve/:screening_id', stc.buyTickets);
+app.get('/api/seat/get/:screening_id', stc.getSeats);
 
 app.listen(SERVER_PORT, () => console.log(`Working on port ${SERVER_PORT}`));

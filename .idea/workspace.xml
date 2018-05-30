@@ -2,24 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e64669d-6fcd-4945-8484-4535f65bec04" name="Default" comment="added screening controllers">
-      <change afterPath="$PROJECT_DIR$/db/screeningDB/checkAvailability.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/screeningDB/createScreening.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/screeningDB/getAllScreenings.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/screeningDB/getScreeningByID.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/screeningDB/removeScreening.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/screeningDB/template.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/screeningDB/test.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/screeningDB/updateScreeningInfo.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nodemon.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/controllers/screeningController/screeningController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/seatDB/checkAvailable.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/seatDB/createTicket.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/seatDB/getSeatsDB.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/seatDB/getTicket.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/controllers/seatsController/seatsController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/69f252ed-db2e-4bcd-9ce1-b9e56f27002a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/69f252ed-db2e-4bcd-9ce1-b9e56f27002a.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/69f252ed-db2e-4bcd-9ce1-b9e56f27002a/storage_v2/_src_/database/d2c4hvp7vmap73.VmRGPQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/69f252ed-db2e-4bcd-9ce1-b9e56f27002a/storage_v2/_src_/database/d2c4hvp7vmap73.VmRGPQ/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/screeningController/screeningController.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/screeningController/screeningController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Admin/AddScreening/AddScreening.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin/AddScreening/AddScreening.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Admin/AddScreening/AuditoriumOptions.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin/AddScreening/AuditoriumOptions.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -87,18 +79,95 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
         <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="auditorium: table" type="a93d6ac6:PostgresImplModel$LocalTable" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="d2c4hvp7vmap73@ec2-23-21-129-50.compute-1.amazonaws.com" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="d2c4hvp7vmap73: database" type="6d9b600a:PostgresImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="demo_reservation: table" type="a93d6ac6:PostgresImplModel$LocalTable" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="d2c4hvp7vmap73@ec2-23-21-129-50.compute-1.amazonaws.com" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="d2c4hvp7vmap73: database" type="6d9b600a:PostgresImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="demo_seat_reserved: table" type="a93d6ac6:PostgresImplModel$LocalTable" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="d2c4hvp7vmap73@ec2-23-21-129-50.compute-1.amazonaws.com" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="d2c4hvp7vmap73: database" type="6d9b600a:PostgresImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="movie: table" type="a93d6ac6:PostgresImplModel$LocalTable" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="d2c4hvp7vmap73@ec2-23-21-129-50.compute-1.amazonaws.com" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="d2c4hvp7vmap73: database" type="6d9b600a:PostgresImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="screening: table" type="a93d6ac6:PostgresImplModel$LocalTable" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="d2c4hvp7vmap73@ec2-23-21-129-50.compute-1.amazonaws.com" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="d2c4hvp7vmap73: database" type="6d9b600a:PostgresImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="seat: table" type="a93d6ac6:PostgresImplModel$LocalTable" />
       </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="scratch.es6" pinned="false" current-in-tab="true">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.es6">
+      <file leaf-file-name="seatsController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/controllers/seatsController/seatsController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="646">
+              <caret line="31" column="53" selection-start-line="31" selection-start-column="53" selection-end-line="31" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="console_4.sql" pinned="false" current-in-tab="true">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/69f252ed-db2e-4bcd-9ce1-b9e56f27002a/console_4.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="296">
+              <caret line="33" column="40" lean-forward="true" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="createTicket.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/seatDB/createTicket.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="console_2.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/69f252ed-db2e-4bcd-9ce1-b9e56f27002a/console_2.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="24">
+              <caret line="1" column="42" selection-start-line="1" selection-start-column="42" selection-end-line="1" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -121,25 +190,19 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/db/userDB/findUser.sql" />
         <option value="$PROJECT_DIR$/db/userDB/addUser.sql" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/69f252ed-db2e-4bcd-9ce1-b9e56f27002a/console_3.sql" />
         <option value="$PROJECT_DIR$/db/movieDB/addMovie.sql" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/69f252ed-db2e-4bcd-9ce1-b9e56f27002a/console_4.sql" />
         <option value="$PROJECT_DIR$/db/movieDB/addMovieToDB.sql" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/69f252ed-db2e-4bcd-9ce1-b9e56f27002a/console_5.sql" />
         <option value="$PROJECT_DIR$/db/movieDB/updateMovieInfo.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/69f252ed-db2e-4bcd-9ce1-b9e56f27002a/console_6.sql" />
         <option value="$PROJECT_DIR$/db/movieDB/deleteMovieFromDB.sql" />
         <option value="$PROJECT_DIR$/db/movieDB/findMovie.sql" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/69f252ed-db2e-4bcd-9ce1-b9e56f27002a/console_1.sql" />
         <option value="$PROJECT_DIR$/db/movieDB/findAllMovies.sql" />
         <option value="$PROJECT_DIR$/public/reset.css" />
         <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_1.es6" />
         <option value="$PROJECT_DIR$/src/components/Admin/AddMovie/AddMovie.jsx" />
         <option value="$PROJECT_DIR$/db/auditoriumDB/getAuditoriums.sql" />
         <option value="$PROJECT_DIR$/src/App.js" />
@@ -153,7 +216,6 @@
         <option value="$PROJECT_DIR$/src/ducks/screening_reducer.js" />
         <option value="$PROJECT_DIR$/src/components/Admin/AddScreening/MovieOptions.jsx" />
         <option value="$PROJECT_DIR$/db/screeningDB/getAllScreenings.sql" />
-        <option value="$PROJECT_DIR$/server/server.js" />
         <option value="$PROJECT_DIR$/db/screeningDB/removeScreening.sql" />
         <option value="$PROJECT_DIR$/db/screeningDB/template.sql" />
         <option value="$PROJECT_DIR$/db/screeningDB/createScreening.sql" />
@@ -164,9 +226,21 @@
         <option value="$PROJECT_DIR$/db/screeningDB/checkAvailability.sql" />
         <option value="$PROJECT_DIR$/db/screeningDB/test.sql" />
         <option value="$PROJECT_DIR$/db/screeningDB/getScreeningByID.sql" />
-        <option value="$PROJECT_DIR$/server/controllers/screeningController/screeningController.js" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/69f252ed-db2e-4bcd-9ce1-b9e56f27002a/console.sql" />
         <option value="$PROJECT_DIR$/db/screeningDB/updateScreeningInfo.sql" />
+        <option value="$PROJECT_DIR$/server/controllers/screeningController/screeningController.js" />
+        <option value="$PROJECT_DIR$/db/seatDB/getSeatsDB.sql" />
+        <option value="$PROJECT_DIR$/server/server.js" />
+        <option value="$PROJECT_DIR$/db/seatDB/getTicket.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/69f252ed-db2e-4bcd-9ce1-b9e56f27002a/console.sql" />
+        <option value="$PROJECT_DIR$/db/seatDB/checkAvailable.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/69f252ed-db2e-4bcd-9ce1-b9e56f27002a/console_2.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/69f252ed-db2e-4bcd-9ce1-b9e56f27002a/console_3.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_1.es6" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/69f252ed-db2e-4bcd-9ce1-b9e56f27002a/console_1.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/69f252ed-db2e-4bcd-9ce1-b9e56f27002a/console_5.sql" />
+        <option value="$PROJECT_DIR$/server/controllers/seatsController/seatsController.js" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/69f252ed-db2e-4bcd-9ce1-b9e56f27002a/console_4.sql" />
+        <option value="$PROJECT_DIR$/db/seatDB/createTicket.sql" />
       </list>
     </option>
   </component>
@@ -191,17 +265,16 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-15" />
-    <option name="y" value="-20" />
-    <option name="width" value="1920" />
-    <option name="height" value="1050" />
+    <option name="x" value="-18" />
+    <option name="y" value="-25" />
+    <option name="width" value="1923" />
+    <option name="height" value="1054" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -229,6 +302,12 @@
             <path>
               <item name="personal-project-i" type="b2602c69:ProjectViewProjectNode" />
               <item name="personal-project-i" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+              <item name="seatDB" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="personal-project-i" type="b2602c69:ProjectViewProjectNode" />
+              <item name="personal-project-i" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -242,14 +321,7 @@
               <item name="personal-project-i" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
               <item name="controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="moviesController" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="personal-project-i" type="b2602c69:ProjectViewProjectNode" />
-              <item name="personal-project-i" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="screeningController" type="462c0819:PsiDirectoryNode" />
+              <item name="seatsController" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="personal-project-i" type="b2602c69:ProjectViewProjectNode" />
@@ -275,13 +347,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="PostgreSQL" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="ECMAScript 6" />
-    <property name="database.console.LAST_STATE" value="false" />
+    <property name="database.console.LAST_STATE" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -345,7 +418,9 @@
       <workItem from="1527265897958" duration="15000" />
       <workItem from="1527265954541" duration="446000" />
       <workItem from="1527266419552" duration="16498000" />
-      <workItem from="1527369469150" duration="4534000" />
+      <workItem from="1527369469150" duration="5743000" />
+      <workItem from="1527376288659" duration="6770000" />
+      <workItem from="1527611664060" duration="26939000" />
     </task>
     <task id="LOCAL-00001" summary="created database schema and file structure">
       <created>1526942514907</created>
@@ -396,28 +471,37 @@
       <option name="project" value="LOCAL" />
       <updated>1527211614906</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="added screening controllers">
+      <created>1527374289556</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1527374289556</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95915000" />
+    <option name="totallyTimeSpent" value="130833000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-8" y="-8" width="1691" height="917" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32896653" />
-      <window_info anchor="bottom" id="Quokka" order="7" weight="0.32896653" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.34497815" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13020134" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Quokka" order="7" weight="0.3276316" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.34473684" />
+      <window_info active="true" anchor="bottom" id="Database Console" order="7" visible="true" weight="0.33026317" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13321055" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.33892617" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.33824432" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -425,7 +509,6 @@
       <window_info anchor="bottom" id="Messages" order="7" weight="0.32928178" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Database Console" order="7" weight="0.33190882" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
@@ -443,85 +526,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="added screening controllers" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db/userDB/addUser.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="12" lean-forward="true" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://69f252ed-db2e-4bcd-9ce1-b9e56f27002a/database/d2c4hvp7vmap73/schema/public/table/seat_reserved">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://69f252ed-db2e-4bcd-9ce1-b9e56f27002a/database/d2c4hvp7vmap73/schema/public/table/users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://69f252ed-db2e-4bcd-9ce1-b9e56f27002a/database/d2c4hvp7vmap73/schema/public/table/seat">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/69f252ed-db2e-4bcd-9ce1-b9e56f27002a/console_3.sql" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/69f252ed-db2e-4bcd-9ce1-b9e56f27002a/console_5.sql" />
-    <entry file="file://$PROJECT_DIR$/db/movieDB/addMovieToDB.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" column="1" selection-start-line="1" selection-start-column="1" selection-end-line="3" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/69f252ed-db2e-4bcd-9ce1-b9e56f27002a/console_4.sql" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/69f252ed-db2e-4bcd-9ce1-b9e56f27002a/console_6.sql" />
-    <entry file="file://$PROJECT_DIR$/db/movieDB/findAllMovies.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/69f252ed-db2e-4bcd-9ce1-b9e56f27002a/console_1.sql" />
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/reset.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.es6" />
-    <entry file="das://69f252ed-db2e-4bcd-9ce1-b9e56f27002a/database/d2c4hvp7vmap73/schema/public/table/auditorium">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/auditoriumDB/findAuditoriums.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
           <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/controllers/auditoriumController/auditoriumController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="52" lean-forward="true" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
         </state>
       </provider>
     </entry>
@@ -557,9 +565,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="9" column="52" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="52" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -641,38 +646,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/screeningDB/template.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="19" column="32" selection-end-line="21" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nodemon.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="332">
           <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/screeningDB/checkAvailability.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/screeningDB/test.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="1" column="52" selection-start-line="1" selection-start-column="52" selection-end-line="1" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="108" selection-start-line="108" selection-end-line="108" />
         </state>
       </provider>
     </entry>
@@ -687,16 +664,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="26">
           <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/69f252ed-db2e-4bcd-9ce1-b9e56f27002a/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="28" selection-start-line="28" selection-end-line="33" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -711,13 +678,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2626">
           <caret line="101" column="28" selection-start-line="101" selection-start-column="28" selection-end-line="101" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/screeningDB/createScreening.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="5" selection-start-line="5" selection-end-line="10" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -737,8 +697,141 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/controllers/screeningController/screeningController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="55" column="34" lean-forward="true" selection-start-line="55" selection-start-column="34" selection-end-line="55" selection-end-column="34" />
+        <state relative-caret-position="72">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/screeningDB/createScreening.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" selection-start-line="5" selection-end-line="10" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.es6">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/controllers/auditoriumController/auditoriumController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="52" lean-forward="true" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/seatDB/getSeatsDB.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/screeningDB/checkAvailability.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="118" column="34" lean-forward="true" selection-start-line="118" selection-start-column="34" selection-end-line="118" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/screeningDB/template.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="35" lean-forward="true" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/screeningDB/test.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" column="52" selection-start-line="1" selection-start-column="52" selection-end-line="1" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.es6">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/69f252ed-db2e-4bcd-9ce1-b9e56f27002a/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10">
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/seatDB/checkAvailable.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="16" lean-forward="true" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://69f252ed-db2e-4bcd-9ce1-b9e56f27002a/database/d2c4hvp7vmap73/schema/public/table/seat">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/69f252ed-db2e-4bcd-9ce1-b9e56f27002a/console_2.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" column="42" selection-start-line="1" selection-start-column="42" selection-end-line="1" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/69f252ed-db2e-4bcd-9ce1-b9e56f27002a/console_5.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="33" column="40" selection-end-line="33" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/seatDB/getTicket.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="2" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="11" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/69f252ed-db2e-4bcd-9ce1-b9e56f27002a/console_1.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/69f252ed-db2e-4bcd-9ce1-b9e56f27002a/console_3.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="62" lean-forward="true" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://69f252ed-db2e-4bcd-9ce1-b9e56f27002a/database/d2c4hvp7vmap73/schema/public/table/seat_reserved">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://69f252ed-db2e-4bcd-9ce1-b9e56f27002a/database/d2c4hvp7vmap73/schema/public/table/demo_reservation">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -749,10 +842,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.es6">
+    <entry file="das://69f252ed-db2e-4bcd-9ce1-b9e56f27002a/database/d2c4hvp7vmap73/schema/public/table/demo_seat_reserved">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/seatDB/createTicket.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="240">
+          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/controllers/seatsController/seatsController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="31" column="53" selection-start-line="31" selection-start-column="53" selection-end-line="31" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://69f252ed-db2e-4bcd-9ce1-b9e56f27002a/database/d2c4hvp7vmap73/schema/public/table/reservation">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/69f252ed-db2e-4bcd-9ce1-b9e56f27002a/console_4.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="33" column="40" lean-forward="true" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
         </state>
       </provider>
     </entry>

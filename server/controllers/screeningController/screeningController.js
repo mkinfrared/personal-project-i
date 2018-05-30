@@ -2,6 +2,8 @@ module.exports = {
 	addScreening: (req, res, next) => {
 		const db = req.app.get('db');
 
+// TODO Check for array desctructuring
+
 		const {movie_id, auditorium_id, screening_start, duration_min} = req.body;
 
 		db.screeningDB.checkAvailability(screening_start, auditorium_id)
