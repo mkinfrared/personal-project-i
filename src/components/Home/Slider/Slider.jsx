@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import _ from 'lodash';
 import Slides from './Slides';
 import Arrows from './Arrows';
 import {connect} from 'react-redux';
@@ -15,7 +14,7 @@ class Slider extends Component {
 		};
 
 		this.handleArrowClick = this.handleArrowClick.bind(this);
-		this.timer;
+		this.timer = '';
 	}
 
 	componentWillMount() {
@@ -37,51 +36,18 @@ class Slider extends Component {
 	}
 
 	componentDidMount() {
-		this.handleArrowClick(1);
-	}
-
-	componentDidUpdate() {
-		const {currentIndex, maxCount, changeCurrentIndex} = this.props;
-		const rightArrow = this.refs.slider.lastChild.lastChild;
-		// const event = new Event('autoplay');
-		//
-		// this.timer = setTimeout(function () {})
-		// rightArrow.addEventListener('autoplay', function () {
-		// 	let index = currentIndex + 1;
-		// 	console.log('trigger');
-		// 	if (index > maxCount) {
-		// 		index = 0;
-		// 	} else if (index < 0) {
-		// 		index = maxCount;
-		// 	}
-		//
-		// 	changeCurrentIndex(index);
-		// });
-		//
-		// let timer = setTimeout(function ticker () {
-		// 	console.log(`maxCount = ${maxCount}
-		// 				currentIndex = ${currentIndex}`);
-		// 	rightArrow.dispatchEvent(event);
-		// 	timer = setTimeout(ticker, 2000);
-		// }, 2000);
-
-		// this.timer = setInterval(function ticker() {
-		// 	let index = currentIndex + 1;
-		//
-		// 	if (index > maxCount) {
-		// 		index = 0;
-		// 	} else if (index < 0) {
-		// 		index = maxCount;
-		// 	}
-		//
-		// 	changeCurrentIndex(index);
-		//
-		// 	_.debounce(ticker, 1000);
-		// }, 1000);
-	}
-
-	handleArrowClick(num, ev) {
 		clearTimeout(this.timer);
+		this.handleArrowClick(this.props.currentIndex);
+	}
+
+	componentWillUnmount() {
+		clearTimeout(this.timer);
+	}
+
+
+	handleArrowClick(num) {
+		clearTimeout(this.timer);
+
 		const {currentIndex, maxCount, changeCurrentIndex} = this.props;
 
 		let index = currentIndex + num;

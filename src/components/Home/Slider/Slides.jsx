@@ -14,7 +14,7 @@ function Slides(props) {
 	return (
 		<div className="slides" style={background}></div>
 	)
-};
+}
 
 function mapStateToProps({slide}) {
 	const {currentIndex} = slide;

@@ -2,6 +2,9 @@ import axios from 'axios';
 
 const initialState = {
 	moviesOnScreen: [],
+	something: {
+		anotherSomething:''
+	}
 };
 
 const UPDATE_MOVIES_ONSCREEN = 'UPDATE_MOVIES_ONSCREEN';

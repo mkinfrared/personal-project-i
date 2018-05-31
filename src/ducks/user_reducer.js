@@ -1,8 +1,6 @@
 import axios from 'axios';
 
-const initialState = {
-	user: {}
-};
+const initialState = {};
 
 const GET_USER = 'GET_USER';
 

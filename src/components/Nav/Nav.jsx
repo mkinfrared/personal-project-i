@@ -7,12 +7,30 @@ import {getUser} from '../../ducks/user_reducer';
 class Nav extends Component {
 	constructor(props) {
 		super(props);
+		this.state = {
+			user: {}
+		}
 	}
 
 	componentWillMount() {
 		const {getUser} = this.props;
+
 		getUser();
 	}
+
+	componentWillReceiveProps(nextProps) {
+		console.log(nextProps);
+	}
+
+
+	componentWillUpdate(nextProps, nextState) {
+		console.log(nextProps)
+	}
+
+	componentDidUpdate(prevProps, prevState) {
+
+	}
+
 
 	loggedIn() {
 		const {user} = this.props;
@@ -36,6 +54,7 @@ class Nav extends Component {
 
 	render() {
 		const {user} = this.props;
+		const {admin} = this.props.user || false;
 
 		return (
 			<nav>
@@ -48,8 +67,13 @@ class Nav extends Component {
 						<Link to="/">Home</Link>
 					</li>
 					<li>
-						<Link to="/showtimes">Showtimes</Link>
+						<Link to="/showtimes">Movies</Link>
 					</li>
+					{(admin) ?
+						<li>
+							<Link to="/admin">Admin</Link>
+						</li>
+						: null}
 				</ul>
 				{(user) ? this.loggedIn() : this.loggedOut()}
 			</nav>
