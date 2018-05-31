@@ -33,17 +33,15 @@ export default class AddScreening extends Component {
 
 		return (
 			<div className="add-screening">
-				<form action={}>
-					<select name="auditorium" defaultValue="RED">
-						<option>Choose Auditorium</option>
-						{auditoriumsList}
-					</select>
-					<select name="movie">
-						<option>Choose movie</option>
-						<MovieOptions/>
-					</select>
-					<input type="datetime-local"/>
-				</form>
+				<select name="auditorium" defaultValue="RED">
+					<option>Choose Auditorium</option>
+					{auditoriumsList}
+				</select>
+				<select name="movie">
+					<option>Choose movie</option>
+					<MovieOptions/>
+				</select>
+				<input type="datetime-local"/>
 			</div>
 		);
 	}

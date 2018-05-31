@@ -1,18 +1,18 @@
 import React, {Component} from 'react';
 import './App.css';
-import AddMovie from './components/Admin/AddMovie/AddMovie';
-import AddScreening from './components/Admin/AddScreening/AddScreening';
+import {HashRouter} from 'react-router-dom';
+import Nav from './components/Nav/Nav';
+import routes from './routes';
 
 class App extends Component {
 	render() {
 		return (
-			<div className="App">
-				<a href={process.env.REACT_APP_LOGIN}>
-					<button>Login</button>
-				</a>
-				<AddMovie/>
-				<AddScreening/>
-			</div>
+			<HashRouter>
+				<div className="App">
+					<Nav/>
+					{routes}
+				</div>
+			</HashRouter>
 		);
 	}
 }

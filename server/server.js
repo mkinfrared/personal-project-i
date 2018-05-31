@@ -88,7 +88,11 @@ app.get('/auth/callback', passport.authenticate('auth0', {
 
 app.get('/auth/me', (req, res) => {
 	if (req.user) {
-		res.status(200).send(req.user);
+		const db = app.get('db');
+		db.userDB.findUser([req.user])
+		  .then((userInfo) => res.status(200).send(userInfo))
+		  .catch((err) => res.status(500).send(err));
+		// res.status(200).send(req.user);
 	} else {
 		res.status(401).send('Nice try suckkkkaaa');
 	}

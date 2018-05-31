@@ -1,0 +1,69 @@
+$accent: #B09E87
+
+nav
+	display: flex
+	justify-content: space-between
+	align-items: center
+	padding: 20px 40px
+	box-sizing: border-box
+	position: absolute
+	width: 100%
+	height: 80px
+	top: 0
+	left: 0
+	background-color: rgba(256,256,256, 0.1)
+	z-index: 99
+	.logo
+		display: flex
+		align-items: center
+		img
+			max-height: 50px
+		p
+			text-transform: uppercase
+			font-family: 'Raleway'
+			font-size: 35px
+	ul
+		display: flex
+		align-items: center
+		justify-content: center
+		li
+			margin-right: 20px
+			Link, a
+				text-decoration: none
+				font-family: 'Roboto'
+				font-size: 18px
+				color: $accent
+				.active-nav
+					color: #000000
+			&:last-child
+				margin-right: 0
+	a
+		text-decoration: none
+		color: $accent
+
+	.logged-in
+		display: flex
+		align-items: center
+		height: 100%
+		img
+			max-height: 50px
+			border-radius: 50%
+			margin-right: 15px
+		.user-block
+			overflow: hidden
+			display: flex
+			flex-flow: column
+			height: 100%
+			position: relative
+			top: 50%
+			transform: translateY(-25%)
+			div
+				overflow: hidden
+				height: 16px
+				transition: height 0.4s linear
+				cursor: pointer
+				&:hover
+					height: 100%
+			p
+				margin-bottom: 5px
+				position: relative

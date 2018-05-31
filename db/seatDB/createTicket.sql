@@ -15,7 +15,7 @@ WITH reserve_ins AS (
 		WHERE NOT EXISTS(SELECT id
 										 FROM demo_seat_reserved
 										 WHERE seat_id = ANY (ARRAY [$2]) AND screening_id = $1)
-	-- 	LIMIT 1
+		LIMIT 1
 	RETURNING seat_id AS reserved_seat, reservation_id)
 SELECT
 	seat.number,

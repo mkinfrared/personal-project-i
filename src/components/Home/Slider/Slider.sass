@@ -1,0 +1,31 @@
+$accent: #B09E87
+
+.slider
+	width: 100%
+	height: 100vh
+	white-space: nowrap
+	overflow: hidden
+	position: relative
+	.slides
+		display: inline-block
+		width: 100%
+		height: 100%
+		transform: translateX(0)
+		transition: transform 0.4s linear
+	.ion
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		// TODO TranslateZ fixes the problem. But why does it happen?
+		transform: translateZ(0)
+		font-size: 80px
+		color: $accent
+		opacity: 0.5
+		transition: opacity 0.4s linear
+		cursor: pointer
+		&:hover
+			opacity: 1
+	.ion-ios-arrow-dropleft-circle
+		left: 30px
+	.ion-ios-arrow-dropright-circle
+		right: 30px
