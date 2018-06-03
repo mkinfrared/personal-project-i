@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e64669d-6fcd-4945-8484-4535f65bec04" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Home/Slider/Arrows/Arrows.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home/Slider/Arrows/Arrows.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Slider/Arrows/Arrows.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home/Slider/Slider.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Slider/Slider.sass" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -79,26 +80,47 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="input-moment.less" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Admin/Screening/AddScreening/less/input-moment.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="15" column="33" lean-forward="true" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="Arrows.jsx" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/components/Home/Slider/Arrows/Arrows.jsx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="240">
+                  <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+                  <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="Slider.sass" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/Home/Slider/Slider.sass">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="270">
+                  <caret line="15" selection-start-line="15" selection-end-line="15" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Arrows.sass" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/components/Home/Slider/Arrows/Arrows.sass">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="216">
+                  <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -130,12 +152,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/69f252ed-db2e-4bcd-9ce1-b9e56f27002a/console_1.sql" />
         <option value="$PROJECT_DIR$/server/controllers/seatsController/seatsController.js" />
         <option value="$PROJECT_DIR$/src/components/Home/TodayScreen/TodayScreen.sass" />
         <option value="$PROJECT_DIR$/src/components/Home/Slider/Slides/Slides.jsx" />
         <option value="$PROJECT_DIR$/src/components/Home/Slider/Slides/Slides.sass" />
-        <option value="$PROJECT_DIR$/src/components/Home/Slider/Slider.sass" />
         <option value="$PROJECT_DIR$/src/components/Home/Slider/Slides.jsx" />
         <option value="$PROJECT_DIR$/src/components/Home/TodayScreen/TodayScreen.jsx" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/69f252ed-db2e-4bcd-9ce1-b9e56f27002a/console_6.sql" />
@@ -179,8 +199,10 @@
         <option value="$PROJECT_DIR$/src/components/Admin/Screening/Screening.sass" />
         <option value="$PROJECT_DIR$/src/components/Home/Slider/Slider.jsx" />
         <option value="$PROJECT_DIR$/src/components/Admin/Screening/AddScreening/less/input-moment.less" />
-        <option value="$PROJECT_DIR$/src/components/Home/Slider/Arrows/Arrows.jsx" />
         <option value="$PROJECT_DIR$/public/index.html" />
+        <option value="$PROJECT_DIR$/src/components/Home/Slider/Slider.sass" />
+        <option value="$PROJECT_DIR$/src/components/Home/Slider/Arrows/Arrows.sass" />
+        <option value="$PROJECT_DIR$/src/components/Home/Slider/Arrows/Arrows.jsx" />
       </list>
     </option>
   </component>
@@ -225,21 +247,6 @@
             <path>
               <item name="personal-project-i" type="b2602c69:ProjectViewProjectNode" />
               <item name="personal-project-i" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="personal-project-i" type="b2602c69:ProjectViewProjectNode" />
-              <item name="personal-project-i" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="personal-project-i" type="b2602c69:ProjectViewProjectNode" />
-              <item name="personal-project-i" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="personal-project-i" type="b2602c69:ProjectViewProjectNode" />
-              <item name="personal-project-i" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -253,49 +260,24 @@
               <item name="personal-project-i" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Admin" type="462c0819:PsiDirectoryNode" />
+              <item name="Home" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="personal-project-i" type="b2602c69:ProjectViewProjectNode" />
               <item name="personal-project-i" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Admin" type="462c0819:PsiDirectoryNode" />
-              <item name="Screening" type="462c0819:PsiDirectoryNode" />
+              <item name="Home" type="462c0819:PsiDirectoryNode" />
+              <item name="Slider" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="personal-project-i" type="b2602c69:ProjectViewProjectNode" />
               <item name="personal-project-i" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Admin" type="462c0819:PsiDirectoryNode" />
-              <item name="Screening" type="462c0819:PsiDirectoryNode" />
-              <item name="AddScreening" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="personal-project-i" type="b2602c69:ProjectViewProjectNode" />
-              <item name="personal-project-i" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Admin" type="462c0819:PsiDirectoryNode" />
-              <item name="Screening" type="462c0819:PsiDirectoryNode" />
-              <item name="AddScreening" type="462c0819:PsiDirectoryNode" />
-              <item name="less" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="personal-project-i" type="b2602c69:ProjectViewProjectNode" />
-              <item name="personal-project-i" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ducks" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="personal-project-i" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-            </path>
-            <path>
-              <item name="personal-project-i" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-              <item name="Database Consoles" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+              <item name="Home" type="462c0819:PsiDirectoryNode" />
+              <item name="Slider" type="462c0819:PsiDirectoryNode" />
+              <item name="Arrows" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -470,11 +452,18 @@
       <option name="project" value="LOCAL" />
       <updated>1527805400447</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="uninstalled ionicons">
+      <created>1527989425977</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1527989425977</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="222698000" />
+    <option name="totallyTimeSpent" value="224075000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -495,8 +484,8 @@
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32894737" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.23947369" />
       <window_info anchor="bottom" id="Quokka" order="9" weight="0.3276316" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3026316" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14671578" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3026316" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14671578" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.4039288" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -530,6 +519,32 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -541,33 +556,10 @@
     <MESSAGE value="added seats controller" />
     <MESSAGE value="added slider" />
     <MESSAGE value="fixed the slider" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed the slider" />
+    <MESSAGE value="uninstalled ionicons" />
+    <option name="LAST_COMMIT_MESSAGE" value="uninstalled ionicons" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/Home/Slider/Slider.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/Slider/Slides/Slides.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/69f252ed-db2e-4bcd-9ce1-b9e56f27002a/console_6.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
@@ -842,13 +834,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/Slider/Arrows/Arrows.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="62" selection-start-line="10" selection-start-column="62" selection-end-line="10" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -872,15 +857,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Admin/Screening/AddScreening/less/input-moment.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="96">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Admin/Screening/AddScreening/less/input-moment.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="15" column="33" lean-forward="true" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+        <state relative-caret-position="336">
+          <caret line="14" column="201" selection-start-line="14" selection-start-column="201" selection-end-line="14" selection-end-column="201" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Home/Slider/Slider.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Home/Slider/Arrows/Arrows.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Home/Slider/Arrows/Arrows.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

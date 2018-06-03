@@ -1,4 +1,5 @@
 import React from 'react';
+import './Arrows.css'
 
 export default function Arrows(props) {
 	const {handleArrowClick} = props;
@@ -6,9 +7,8 @@ export default function Arrows(props) {
 
 	return (
 		<div className="arrows">
-			{/*<i className="ion ion-ios-arrow-dropleft-circle" onClick={() => handleArrowClick(-1)}></i>*/}
-			{/*<i className="ion ion-ios-arrow-dropright-circle" onClick={() => handleArrowClick(1)}></i>*/}
-			<ion-icon name="arrow-dropleft-circle"></ion-icon>
+			<i onClick={() => handleArrowClick(-1)} className="fas fa-chevron-circle-left"></i>
+			<i onClick={() => handleArrowClick(1)} className="fas fa-chevron-circle-right"></i>
 		</div>
 	);
 };

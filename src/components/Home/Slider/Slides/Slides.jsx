@@ -1,5 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
+import './Slides.css'
 
 function Slides(props) {
 	const {banner_pic, tagline, title, trailer, user_rating} = props.movie;
