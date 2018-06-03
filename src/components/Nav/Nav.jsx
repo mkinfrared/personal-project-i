@@ -9,7 +9,10 @@ class Nav extends Component {
 		super(props);
 		this.state = {
 			user: {}
-		}
+		};
+
+		this.positionStyle = {};
+
 	}
 
 	componentWillMount() {
@@ -19,16 +22,14 @@ class Nav extends Component {
 	}
 
 	componentWillReceiveProps(nextProps) {
-		console.log(nextProps);
-	}
-
-
-	componentWillUpdate(nextProps, nextState) {
-		console.log(nextProps)
-	}
-
-	componentDidUpdate(prevProps, prevState) {
-
+		console.log(nextProps.currentURL);
+		if (nextProps.currentURL === '/') {
+			this.positionStyle = {
+				position: 'absolute'
+			}
+		} else {
+			this.positionStyle = {};
+		}
 	}
 
 
@@ -57,7 +58,7 @@ class Nav extends Component {
 		const {admin} = this.props.user || false;
 
 		return (
-			<nav>
+			<nav ref="navigation" style={this.positionStyle}>
 				<div className="logo">
 					<img src="/images/logo-without-url.png" alt="logo"/>
 					<p>Majestic</p>
@@ -81,8 +82,10 @@ class Nav extends Component {
 	}
 }
 
-function mapStateToProps({users}) {
-	return users
+// TODO What to do with logout button
+
+function mapStateToProps({users, url_address}) {
+	return {...users, ...url_address};
 }
 
-export default connect(mapStateToProps, {getUser})(Nav)
+export default connect(mapStateToProps, {getUser})(Nav);

@@ -19,7 +19,7 @@ export default function screeningReducer(state = initialState, action) {
 }
 
 export function updateMoviesOnScreen() {
-	const moviesList = axios.get('/api/movies/movies_on_screen')
+	const moviesList = axios.get('/api/screenings/movies_on_screen')
 							.then((resp) => resp.data)
 							.catch((err) => console.log(err));
 

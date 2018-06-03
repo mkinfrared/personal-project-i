@@ -104,8 +104,8 @@ app.post('/api/movie/add_movie', mc.addMovie);
 app.put('/api/movie/update_movie', mc.updateMovie);
 app.delete('/api/movie/delete_movie', mc.deleteMovie);
 app.get('/api/movie/:movie_id', mc.getMovie);
-app.get('/api/movies', mc.getAllMovies);
-app.get('/api/movies/movies_on_screen', mc.getMoviesOnScreen);
+app.get('/api/screenings', mc.getAllMovies);
+app.get('/api/screenings/movies_on_screen', mc.getMoviesOnScreen);
 
 // AUDITORIUM CONTROLLERS
 
@@ -115,6 +115,7 @@ app.get('/api/auditorium/get_auditoriums', ac.getAuditoriums);
 // SCREENING CONTROLLERS
 
 app.post('/api/screening/create_screening', sc.addScreening);
+app.get('/api/screenings', sc.getScreenings);
 
 // SEAT CONTROLLERS
 

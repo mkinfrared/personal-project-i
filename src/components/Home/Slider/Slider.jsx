@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import Slides from './Slides';
-import Arrows from './Arrows';
+import Slides from './Slides/Slides';
+import Arrows from './Arrows/Arrows';
 import {connect} from 'react-redux';
 import {changeMaxCount, changeCurrentIndex} from '../../../ducks/slider_reducer';
 import {updateMoviesOnScreen} from '../../../ducks/screening_reducer';
@@ -44,7 +44,6 @@ class Slider extends Component {
 		clearTimeout(this.timer);
 	}
 
-
 	handleArrowClick(num) {
 		clearTimeout(this.timer);
 
@@ -63,7 +62,7 @@ class Slider extends Component {
 
 		this.timer = setTimeout(() => {
 			this.handleArrowClick(1)
-		}, 3400);
+		}, 5400);
 	}
 
 	render() {
@@ -73,6 +72,7 @@ class Slider extends Component {
 			<div className="slider" ref="slider">
 				{slides}
 				<Arrows handleArrowClick={this.handleArrowClick}/>
+				<i className="ion ion-md-remove-circle"></i>
 			</div>
 		);
 	}

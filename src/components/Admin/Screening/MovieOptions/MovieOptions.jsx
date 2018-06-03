@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-import {updateMoviesOnScreen} from '../../../ducks/screening_reducer';
+import {updateMoviesOnScreen} from '../../../../ducks/screening_reducer';
 
 class MovieOptions extends Component {
 	constructor(props) {
@@ -19,8 +19,10 @@ class MovieOptions extends Component {
 	}
 }
 
-function mapStateToProps({moviesOnScreen}) {
-	return {moviesOnScreen}
+function mapStateToProps({screenings}) {
+	const {moviesOnScreen} = screenings;
+
+	return {moviesOnScreen};
 }
 
 export default connect(mapStateToProps, {updateMoviesOnScreen})(MovieOptions);
