@@ -13,14 +13,14 @@ class MovieOptions extends Component {
 
 	render() {
 		const options = this.props.moviesOnScreen.map((elem) => {
-			return <option key={elem.id} value={elem.id}>{elem.title}</option>
+			return <option key={elem.id} value={[elem.id, elem.duration_min]}>{elem.title}</option>
 		});
 		return options;
 	}
 }
 
-function mapStateToProps({screenings}) {
-	const {moviesOnScreen} = screenings;
+function mapStateToProps({showtimes}) {
+	const {moviesOnScreen} = showtimes;
 
 	return {moviesOnScreen};
 }

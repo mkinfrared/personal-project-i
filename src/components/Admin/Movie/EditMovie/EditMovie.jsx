@@ -1,14 +1,17 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 import {Link} from 'react-router-dom';
+import {connect} from 'react-redux';
+import {updateCurrentMovieInfo} from '../../../../ducks/screening_reducer';
 import {ToastContainer, toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
-import './AddMovie.css'
+import './EditMovie.css'
 
-export default class AddMovie extends Component {
+class EditMovie extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
+			id          : '',
 			title       : '',
 			director    : '',
 			actors      : '',
@@ -22,11 +25,12 @@ export default class AddMovie extends Component {
 			release_date: '',
 			imdb_rating : '',
 			poster_pic  : '',
-			banner_pic  : ''
+			banner_pic  : '',
+			on_screen   : ''
 		};
 
-		this.handleChange       = this.handleChange.bind(this);
-		this.addMovieToDatabase = this.addMovieToDatabase.bind(this);
+		this.handleChange = this.handleChange.bind(this);
+		this.editMovie    = this.editMovie.bind(this);
 
 	}
 
@@ -36,13 +40,14 @@ export default class AddMovie extends Component {
 		this.setState({[name]: value});
 	}
 
-	addMovieToDatabase() {
+	editMovie() {
 		const {state} = this;
 		console.log(this.state);
 
-		axios.post('/api/movies/add_movie', {...state})
+		axios.put('/api/movies/update_movie', {...state})
 			 .then(() => {
 				 this.setState({
+					 id          : '',
 					 title       : '',
 					 director    : '',
 					 actors      : '',
@@ -56,14 +61,40 @@ export default class AddMovie extends Component {
 					 release_date: '',
 					 imdb_rating : '',
 					 poster_pic  : '',
-					 banner_pic  : ''
+					 banner_pic  : '',
+					 on_screen   : ''
 				 });
-				 toast.success('ADDED TO DATABASE', {autoClose: 3000});
+				 toast.success('SAVED', {autoClose: 3000});
 				 setTimeout(() => this.props.history.push('/admin/movie'), 3100);
 			 })
 			 .catch((err) => {
 				 toast.error(err.message, {autoClose: 3000});
 			 });
+	}
+
+	componentWillMount() {
+		const {movie_id} = this.props.match.params;
+
+		this.props.updateCurrentMovieInfo(movie_id);
+	}
+
+	componentWillReceiveProps(nextProps) {
+		const {
+				  id, title, director, actors, writer,
+				  studio, description, duration_min,
+				  genre, mpaa, tagline, release_date,
+				  imdb_rating, poster_pic, banner_pic, on_screen
+			  } = nextProps.currentMovieInfo;
+
+		const options = {day: 'numeric', month: 'long', year: 'numeric'};
+
+		this.setState({
+			id, title, director, writer,
+			studio, description, duration_min,
+			genre, mpaa, tagline, imdb_rating,
+			poster_pic, banner_pic, on_screen, actors,
+			release_date: new Date(release_date).toLocaleDateString("en-US", options),
+		});
 	}
 
 	render() {
@@ -152,7 +183,7 @@ export default class AddMovie extends Component {
 					</div>
 				</div>
 				<div className="add-cancel-block">
-					<i className="fas fa-check-circle" onClick={() => this.addMovieToDatabase()}></i>
+					<i className="fas fa-check-circle" onClick={() => this.editMovie()}></i>
 					<Link to="/admin/movie">
 						<i className="fas fa-times-circle"></i>
 					</Link>
@@ -162,3 +193,11 @@ export default class AddMovie extends Component {
 		);
 	}
 }
+
+function mapStateToProps({showtimes}) {
+	const {currentMovieInfo} = showtimes;
+
+	return {currentMovieInfo};
+}
+
+export default connect(mapStateToProps, {updateCurrentMovieInfo})(EditMovie);

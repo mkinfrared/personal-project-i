@@ -1,12 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8e64669d-6fcd-4945-8484-4535f65bec04" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Home/Slider/Arrows/Arrows.sass" afterDir="false" />
+    <list default="true" id="8e64669d-6fcd-4945-8484-4535f65bec04" name="Default" comment="switched to fontawesome">
+      <change afterPath="$PROJECT_DIR$/db/screeningDB/deleteScreeningFromDB.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Admin/Movie/EditMovie/EditMovie.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Admin/Movie/EditMovie/EditMovie.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Admin/Movie/MovieList/MovieLIst.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/69f252ed-db2e-4bcd-9ce1-b9e56f27002a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/69f252ed-db2e-4bcd-9ce1-b9e56f27002a.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/69f252ed-db2e-4bcd-9ce1-b9e56f27002a/storage_v2/_src_/database/d2c4hvp7vmap73.VmRGPQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/69f252ed-db2e-4bcd-9ce1-b9e56f27002a/storage_v2/_src_/database/d2c4hvp7vmap73.VmRGPQ/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/movieDB/findAllMovies.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/movieDB/findAllMovies.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/movieDB/updateMovieInfo.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/movieDB/updateMovieInfo.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/screeningDB/createScreening.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/screeningDB/createScreening.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/screeningDB/getAllScreenings.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/screeningDB/getAllScreenings.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/Slider/Arrows/Arrows.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Slider/Arrows/Arrows.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/Slider/Slider.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Slider/Slider.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/moviesController/moviesControllers.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/moviesController/moviesControllers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/screeningController/screeningController.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/screeningController/screeningController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Admin/Admin.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin/Admin.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Admin/Admin.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin/Admin.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Admin/Movie/AddMovie/AddMovie.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin/Movie/AddMovie/AddMovie.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Admin/Movie/AddMovie/AddMovie.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin/Movie/AddMovie/AddMovie.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Admin/Movie/Movie.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin/Movie/Movie.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Admin/Movie/Movie.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin/Movie/Movie.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Admin/Movie/MovieList/MovieList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin/Movie/MovieList/MovieList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Admin/Screening/AddScreening/AddScreening.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin/Screening/AddScreening/AddScreening.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Admin/Screening/AddScreening/AddScreening.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin/Screening/AddScreening/AddScreening.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Admin/Screening/AuditoriumOptions/AuditoriumOptions.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin/Screening/AuditoriumOptions/AuditoriumOptions.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Admin/Screening/MovieOptions/MovieOptions.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin/Screening/MovieOptions/MovieOptions.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Admin/Screening/Screening.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin/Screening/Screening.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Admin/Screening/ScreeningList/ScreeningList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin/Screening/ScreeningList/ScreeningList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Admin/Screening/ScreeningList/ScreeningList.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin/Screening/ScreeningList/ScreeningList.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home/Slider/Slider.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Slider/Slider.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Nav/Nav.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Nav/Nav.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Nav/Nav.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Nav/Nav.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/variables.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/variables.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ducks/screening_reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ducks/screening_reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -74,7 +106,7 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
         <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="screening: table" type="a93d6ac6:PostgresImplModel$LocalTable" />
+        <item name="movie: table" type="a93d6ac6:PostgresImplModel$LocalTable" />
       </path>
     </expand>
     <select />
@@ -83,14 +115,70 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="Arrows.jsx" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/components/Home/Slider/Arrows/Arrows.jsx">
+          <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/server/server.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="240">
-                  <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
-                  <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+                <state relative-caret-position="76">
+                  <caret line="103" column="45" selection-start-line="103" selection-start-column="45" selection-end-line="103" selection-end-column="45" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="moviesControllers.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/server/controllers/moviesController/moviesControllers.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-1811">
+                  <caret line="28" column="37" lean-forward="true" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="updateMovieInfo.sql" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/db/movieDB/updateMovieInfo.sql">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="408">
+                  <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="AddMovie.jsx" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/Admin/Movie/AddMovie/AddMovie.jsx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-3066">
+                  <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
                   <folding>
-                    <element signature="e#0#26#0" expanded="true" />
+                    <element signature="e#0#39#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="MovieList.jsx" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/components/Admin/Movie/MovieList/MovieList.jsx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="336">
+                  <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="screening_reducer.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/ducks/screening_reducer.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="456">
+                  <caret line="64" column="54" selection-start-line="64" selection-start-column="54" selection-end-line="64" selection-end-column="54" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Admin.jsx" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/Admin/Admin.jsx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="246">
+                  <caret line="40" column="56" selection-start-line="40" selection-start-column="56" selection-end-line="40" selection-end-column="56" />
+                  <folding>
+                    <element signature="e#0#39#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -100,20 +188,38 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="Slider.sass" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/components/Home/Slider/Slider.sass">
+          <file leaf-file-name="AddMovie.sass" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/Admin/Movie/AddMovie/AddMovie.sass">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="270">
-                  <caret line="15" selection-start-line="15" selection-end-line="15" />
+                <state relative-caret-position="308">
+                  <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="41" selection-end-column="32" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Arrows.sass" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/components/Home/Slider/Arrows/Arrows.sass">
+          <file leaf-file-name="EditMovie.sass" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/Admin/Movie/EditMovie/EditMovie.sass">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="216">
-                  <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+                <state relative-caret-position="984">
+                  <caret line="41" column="32" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="MovieLIst.sass" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/components/Admin/Movie/MovieList/MovieLIst.sass">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="72">
+                  <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="scratch_5.es6" pinned="false" current-in-tab="false">
+            <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_5.es6">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="168">
+                  <caret line="7" column="35" lean-forward="true" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
                 </state>
               </provider>
             </entry>
@@ -125,12 +231,12 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Database" />
         <option value="CSS File" />
         <option value="JavaScript File" />
         <option value="Less File" />
-        <option value="React Component" />
+        <option value="Database" />
         <option value="Sass File" />
+        <option value="React Component" />
       </list>
     </option>
   </component>
@@ -139,6 +245,10 @@
       <find>update</find>
       <find>text</find>
       <find>app</find>
+      <find>width</find>
+      <find>handle</find>
+      <find>Change</find>
+      <find>getAll</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -152,57 +262,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/server/controllers/seatsController/seatsController.js" />
-        <option value="$PROJECT_DIR$/src/components/Home/TodayScreen/TodayScreen.sass" />
-        <option value="$PROJECT_DIR$/src/components/Home/Slider/Slides/Slides.jsx" />
-        <option value="$PROJECT_DIR$/src/components/Home/Slider/Slides/Slides.sass" />
-        <option value="$PROJECT_DIR$/src/components/Home/Slider/Slides.jsx" />
-        <option value="$PROJECT_DIR$/src/components/Home/TodayScreen/TodayScreen.jsx" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/69f252ed-db2e-4bcd-9ce1-b9e56f27002a/console_6.sql" />
-        <option value="$PROJECT_DIR$/src/components/Home/Slider/Arrows.jsx" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_2.es6" />
-        <option value="$PROJECT_DIR$/src/index.js" />
-        <option value="$PROJECT_DIR$/src/App.js" />
-        <option value="$PROJECT_DIR$/src/ducks/web_app_reducer.js" />
-        <option value="$PROJECT_DIR$/src/ducks/urlReducer.js" />
-        <option value="$PROJECT_DIR$/src/store.js" />
-        <option value="$PROJECT_DIR$/src/components/Home/Home.jsx" />
-        <option value="$PROJECT_DIR$/src/components/Admin/AddMovie/AddMovie.jsx" />
-        <option value="$PROJECT_DIR$/src/components/Admin/AddMovie/AddMovie.sass" />
-        <option value="$PROJECT_DIR$/src/routes.jsx" />
-        <option value="$PROJECT_DIR$/src/components/Admin/Admin.sass" />
-        <option value="$PROJECT_DIR$/src/ducks/urls_reducer.js" />
-        <option value="$PROJECT_DIR$/src/ducks/user_reducer.js" />
-        <option value="$PROJECT_DIR$/src/ducks/screening_reducer.js" />
-        <option value="$PROJECT_DIR$/src/components/Admin/AddScreening/MovieOptions.jsx" />
-        <option value="$PROJECT_DIR$/src/components/Nav/Nav.jsx" />
-        <option value="$PROJECT_DIR$/src/components/Admin/AddScreening/AddScreening.less" />
-        <option value="$PROJECT_DIR$/src/components/Admin/AddScreening/less/variables.less" />
-        <option value="$PROJECT_DIR$/src/components/Admin/AddScreening/less/calendar.less" />
-        <option value="$PROJECT_DIR$/src/components/Admin/AddScreening/AddScreening.jsx" />
         <option value="$PROJECT_DIR$/src/components/Admin/AddScreening/AddScreening.sass" />
-        <option value="$PROJECT_DIR$/src/components/Admin/Movie/Movie.jsx" />
-        <option value="$PROJECT_DIR$/db/screeningDB/getAllScreenings.sql" />
-        <option value="$PROJECT_DIR$/server/server.js" />
         <option value="$PROJECT_DIR$/src/components/Admin/Movie/MovieList.jsx" />
-        <option value="$PROJECT_DIR$/src/components/Admin/Admin.jsx" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_3.es6" />
         <option value="$PROJECT_DIR$/src/components/Admin/Screening/ScreeningList.jsx" />
-        <option value="$PROJECT_DIR$/src/components/Admin/Movie/Movie.sass" />
-        <option value="$PROJECT_DIR$/src/components/variables.sass" />
-        <option value="$PROJECT_DIR$/src/components/Nav/Nav.sass" />
-        <option value="$PROJECT_DIR$/src/components/Admin/Screening/Screening.jsx" />
-        <option value="$PROJECT_DIR$/src/components/Admin/Screening/AddScreening/AddScreening.sass" />
-        <option value="$PROJECT_DIR$/src/components/Admin/Screening/AddScreening/AddScreening.jsx" />
-        <option value="$PROJECT_DIR$/src/components/Admin/Screening/ScreeningList/ScreeningList.jsx" />
-        <option value="$PROJECT_DIR$/src/components/Admin/Screening/ScreeningList/ScreeningList.sass" />
         <option value="$PROJECT_DIR$/src/components/Admin/Screening/Screening.sass" />
-        <option value="$PROJECT_DIR$/src/components/Home/Slider/Slider.jsx" />
         <option value="$PROJECT_DIR$/src/components/Admin/Screening/AddScreening/less/input-moment.less" />
-        <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/src/components/Home/Slider/Slider.sass" />
         <option value="$PROJECT_DIR$/src/components/Home/Slider/Arrows/Arrows.sass" />
         <option value="$PROJECT_DIR$/src/components/Home/Slider/Arrows/Arrows.jsx" />
+        <option value="$PROJECT_DIR$/src/components/Home/Slider/Slider.sass" />
+        <option value="$PROJECT_DIR$/src/components/Home/Slider/Slides/Slides.sass" />
+        <option value="$PROJECT_DIR$/src/components/Admin/Screening/AddScreening/AddScreening.sass" />
+        <option value="$PROJECT_DIR$/src/components/Admin/Screening/AuditoriumOptions/AuditoriumOptions.jsx" />
+        <option value="$PROJECT_DIR$/db/screeningDB/getAllScreenings.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/69f252ed-db2e-4bcd-9ce1-b9e56f27002a/console_7.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_4.es6" />
+        <option value="$PROJECT_DIR$/src/store.js" />
+        <option value="$PROJECT_DIR$/src/components/Admin/Screening/MovieOptions/MovieOptions.jsx" />
+        <option value="$PROJECT_DIR$/public/index.html" />
+        <option value="$PROJECT_DIR$/src/App.css" />
+        <option value="$PROJECT_DIR$/src/components/Home/Slider/Slider.jsx" />
+        <option value="$PROJECT_DIR$/src/components/Home/Slider/Slides/Slides.jsx" />
+        <option value="$PROJECT_DIR$/src/components/Nav/Nav.sass" />
+        <option value="$PROJECT_DIR$/src/components/Admin/Screening/AddScreening/less/variables.less" />
+        <option value="$PROJECT_DIR$/src/ducks/slider_reducer.js" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.es6" />
+        <option value="$PROJECT_DIR$/src/components/Admin/Screening/ScreeningList/ScreeningList.sass" />
+        <option value="$PROJECT_DIR$/src/components/Admin/Screening/AddScreening/AddScreening.jsx" />
+        <option value="$PROJECT_DIR$/db/screeningDB/deleteScreening.sql" />
+        <option value="$PROJECT_DIR$/server/controllers/screeningController/screeningController.js" />
+        <option value="$PROJECT_DIR$/db/screeningDB/deleteScreeningFromDB.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/69f252ed-db2e-4bcd-9ce1-b9e56f27002a/console_8.sql" />
+        <option value="$PROJECT_DIR$/src/components/Admin/Screening/Screening.jsx" />
+        <option value="$PROJECT_DIR$/server/server.js" />
+        <option value="$PROJECT_DIR$/src/components/Admin/Screening/ScreeningList/ScreeningList.jsx" />
+        <option value="$PROJECT_DIR$/db/movieDB/findAllMovies.sql" />
+        <option value="$PROJECT_DIR$/src/components/Nav/Nav.jsx" />
+        <option value="$PROJECT_DIR$/src/components/Admin/Admin.sass" />
+        <option value="$PROJECT_DIR$/src/components/Admin/Movie/Movie.jsx" />
+        <option value="$PROJECT_DIR$/src/components/variables.sass" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_5.es6" />
+        <option value="$PROJECT_DIR$/src/components/Admin/Movie/MovieList/MovieList.jsx" />
+        <option value="$PROJECT_DIR$/src/components/Admin/Admin.jsx" />
+        <option value="$PROJECT_DIR$/src/ducks/screening_reducer.js" />
+        <option value="$PROJECT_DIR$/db/movieDB/updateMovieInfo.sql" />
+        <option value="$PROJECT_DIR$/server/controllers/moviesController/moviesControllers.js" />
+        <option value="$PROJECT_DIR$/src/components/Admin/Movie/AddMovie/AddMovie.jsx" />
+        <option value="$PROJECT_DIR$/src/components/Admin/Movie/EditMovie/EditMovie.jsx" />
+        <option value="$PROJECT_DIR$/src/components/Admin/Movie/AddMovie/AddMovie.sass" />
+        <option value="$PROJECT_DIR$/src/components/Admin/Movie/EditMovie/EditMovie.sass" />
+        <option value="$PROJECT_DIR$/src/components/Admin/Movie/Movie.sass" />
+        <option value="$PROJECT_DIR$/src/components/Admin/Movie/MovieList/MovieLIst.sass" />
       </list>
     </option>
   </component>
@@ -227,10 +337,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-12" />
-    <option name="y" value="-12" />
-    <option name="width" value="1940" />
-    <option name="height" value="1054" />
+    <option name="x" value="-13" />
+    <option name="y" value="-13" />
+    <option name="width" value="1942" />
+    <option name="height" value="1055" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -244,41 +354,6 @@
               <item name="personal-project-i" type="b2602c69:ProjectViewProjectNode" />
               <item name="personal-project-i" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="personal-project-i" type="b2602c69:ProjectViewProjectNode" />
-              <item name="personal-project-i" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="personal-project-i" type="b2602c69:ProjectViewProjectNode" />
-              <item name="personal-project-i" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="personal-project-i" type="b2602c69:ProjectViewProjectNode" />
-              <item name="personal-project-i" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Home" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="personal-project-i" type="b2602c69:ProjectViewProjectNode" />
-              <item name="personal-project-i" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Home" type="462c0819:PsiDirectoryNode" />
-              <item name="Slider" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="personal-project-i" type="b2602c69:ProjectViewProjectNode" />
-              <item name="personal-project-i" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Home" type="462c0819:PsiDirectoryNode" />
-              <item name="Slider" type="462c0819:PsiDirectoryNode" />
-              <item name="Arrows" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -287,18 +362,22 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="NewWatcherDialog.advanced.open" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="PostgreSQL" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="ECMAScript 6" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/AppData/Roaming/npm/sass.cmd" />
     <property name="list.type.of.created.stylesheet" value="Sass" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\mkinfrared\Documents\Mega\Web-Development\Dev-Mountain\Projects\personal-project-i\src\components\Admin\Movie\EditMovie" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\mkinfrared\Documents\Mega\Web-Development\Dev-Mountain\Projects\personal-project-i\src\components\Home\Slider\Slides" />
       <recent name="D:\mkinfrared\Documents\Mega\Web-Development\Dev-Mountain\Projects\personal-project-i\src\components\Home\Slider\Arrows" />
@@ -319,9 +398,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.scratch_3.es6">
+  <component name="RunManager" selected="Node.js.scratch_5.es6">
     <configuration name="scratch_1.es6" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="$APPLICATION_CONFIG_DIR$/scratches/scratch_1.es6" working-dir="$PROJECT_DIR$" />
     <configuration name="scratch_3.es6" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="$APPLICATION_CONFIG_DIR$/scratches/scratch_3.es6" working-dir="$PROJECT_DIR$" />
+    <configuration name="scratch_5.es6" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="$APPLICATION_CONFIG_DIR$/scratches/scratch_5.es6" working-dir="$PROJECT_DIR$" />
     <configuration name="scratch.es6" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="$APPLICATION_CONFIG_DIR$/scratches/scratch.es6" working-dir="$PROJECT_DIR$" />
     <configuration name="server.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="server.js" working-dir="$PROJECT_DIR$/server" />
     <list>
@@ -329,14 +409,15 @@
       <item itemvalue="Node.js.scratch_1.es6" />
       <item itemvalue="Node.js.scratch.es6" />
       <item itemvalue="Node.js.scratch_3.es6" />
+      <item itemvalue="Node.js.scratch_5.es6" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.scratch_5.es6" />
         <item itemvalue="Node.js.scratch_3.es6" />
         <item itemvalue="Node.js.scratch.es6" />
         <item itemvalue="Node.js.scratch_1.es6" />
         <item itemvalue="Node.js.server.js" />
-        <item itemvalue="Node.js.scratch.es6" />
       </list>
     </recent_temporary>
   </component>
@@ -374,6 +455,7 @@
       <workItem from="1527738217800" duration="32900000" />
       <workItem from="1527890479959" duration="3857000" />
       <workItem from="1527894355322" duration="28720000" />
+      <workItem from="1528061545602" duration="12698000" />
     </task>
     <task id="LOCAL-00001" summary="created database schema and file structure">
       <created>1526942514907</created>
@@ -459,11 +541,18 @@
       <option name="project" value="LOCAL" />
       <updated>1527989425977</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="switched to fontawesome">
+      <created>1527992903258</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1527992903258</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="224075000" />
+    <option name="totallyTimeSpent" value="270771000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -476,45 +565,56 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1691" height="917" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32894737" />
-      <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" weight="0.32894737" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="11" weight="0.32894737" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.23947369" />
-      <window_info anchor="bottom" id="Quokka" order="9" weight="0.3276316" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3026316" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14671578" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="3" weight="0.4039288" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="TypeScript" order="16" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Quokka" order="9" weight="0.3276316" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14180478" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32894737" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.23947369" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.4039288" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32928178" />
+      <window_info anchor="bottom" id="Quokka" order="9" weight="0.3276316" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.13157895" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14671578" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" weight="0.4039288" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32894737" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="TypeScript" order="17" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32928178" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Database Console" order="13" weight="0.33026317" />
+    </layout>
+    <layout-to-restore>
+      <window_info anchor="bottom" id="TypeScript" order="15" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Database Console" order="13" weight="0.33026317" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Quokka" order="9" weight="0.3276316" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.23947369" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14487416" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32894737" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32894737" />
+      <window_info anchor="right" id="Database" order="3" weight="0.4039288" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.30394736" />
       <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Database Console" order="7" weight="0.33026317" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.30394736" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-    </layout>
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32928178" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -557,238 +657,91 @@
     <MESSAGE value="added slider" />
     <MESSAGE value="fixed the slider" />
     <MESSAGE value="uninstalled ionicons" />
-    <option name="LAST_COMMIT_MESSAGE" value="uninstalled ionicons" />
+    <MESSAGE value="switched to fontawesome" />
+    <option name="LAST_COMMIT_MESSAGE" value="switched to fontawesome" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/69f252ed-db2e-4bcd-9ce1-b9e56f27002a/console_6.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="43" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/TodayScreen/TodayScreen.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_2.es6">
+    <entry file="file://$PROJECT_DIR$/db/screeningDB/checkAvailability.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <caret line="9" column="20" lean-forward="true" selection-end-line="22" selection-end-column="85" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
+    <entry file="file://$PROJECT_DIR$/node_modules/input-moment/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ducks/slider_reducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://69f252ed-db2e-4bcd-9ce1-b9e56f27002a/database/d2c4hvp7vmap73/schema/public/table/users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
-          <filtering enabled="true" />
+          <caret column="39" selection-start-column="39" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="das://69f252ed-db2e-4bcd-9ce1-b9e56f27002a/database/d2c4hvp7vmap73/schema/public/table/movie">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/routes.jsx">
+    <entry file="file://$PROJECT_DIR$/node_modules/input-moment/lib/input-moment.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="43" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Admin/Movie/AddMovie/AddMovie.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="23" lean-forward="true" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ducks/urls_reducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ducks/user_reducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Admin/Screening/AddScreening/AddScreening.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-72" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Admin/AddScreening/AddScreening.less" />
-    <entry file="file://$PROJECT_DIR$/src/components/Admin/Screening/AddScreening/less/slider.less">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Admin/Screening/AddScreening/less/time.less">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/moment/moment.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-126">
-          <caret line="413" column="4" selection-start-line="413" selection-start-column="4" selection-end-line="413" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Admin/Movie/AddMovie/AddMovie.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/screeningDB/getAllScreenings.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Admin/Screening/MovieOptions/MovieOptions.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Admin/Movie/MovieList/MovieList.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Admin/Admin.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="35" column="40" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ducks/screening_reducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Nav/Nav.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Admin/Admin.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_3.es6">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="117" column="16" lean-forward="true" selection-start-line="117" selection-start-column="9" selection-end-line="117" selection-end-column="24" />
+        <state relative-caret-position="282">
+          <caret line="119" column="17" selection-start-line="119" selection-start-column="17" selection-end-line="119" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/store.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+        <state relative-caret-position="216">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#68#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Admin/Movie/Movie.sass">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Admin/Movie/Movie.jsx">
+    <entry file="file://$PROJECT_DIR$/src/components/Admin/Screening/MovieOptions/MovieOptions.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        <state relative-caret-position="414">
+          <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Home/Slider/Slider.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="81" column="46" selection-start-line="81" selection-start-column="46" selection-end-line="81" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Admin/Screening/AddScreening/less/calendar.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Admin/Screening/AddScreening/less/variables.less">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="20" selection-start-column="14" selection-end-column="20" />
+          <caret column="13" lean-forward="true" selection-start-column="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Nav/Nav.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="48" column="27" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
+        <state relative-caret-position="336">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/variables.sass">
+    <entry file="file://$PROJECT_DIR$/src/App.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Admin/Screening/ScreeningList/ScreeningList.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="48" column="44" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Admin/Screening/ScreeningList/ScreeningList.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Admin/Screening/AddScreening/AddScreening.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+        <state relative-caret-position="144">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -799,101 +752,284 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Admin/Screening/AddScreening/less/calendar.less">
+    <entry file="file://$PROJECT_DIR$/src/ducks/slider_reducer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+        <state relative-caret-position="114">
+          <caret line="13" column="59" selection-start-line="13" selection-start-column="59" selection-end-line="13" selection-end-column="59" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Admin/Screening/Screening.jsx">
+    <entry file="file://$PROJECT_DIR$/src/components/Home/Slider/Slides/Slides.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+        <state relative-caret-position="120">
+          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/input-moment/index.js">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/69f252ed-db2e-4bcd-9ce1-b9e56f27002a/console_7.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="38" selection-start-column="38" selection-end-column="38" />
+        <state relative-caret-position="504">
+          <caret line="21" column="42" lean-forward="true" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/input-moment/lib/input-moment.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Admin/Screening/ScreeningList/ScreeningList.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="148" column="27" lean-forward="true" selection-start-line="148" selection-start-column="27" selection-end-line="148" selection-end-column="27" />
+        <state relative-caret-position="572">
+          <caret line="39" column="34" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Admin/Screening/AddScreening/AddScreening.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+        <state relative-caret-position="216">
+          <caret line="9" selection-start-line="9" selection-end-line="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/db/screeningDB/removeScreening.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="12" lean-forward="true" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/controllers/screeningController/screeningController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <caret line="51" column="32" lean-forward="true" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/Slider/Slider.jsx">
+    <entry file="file://$PROJECT_DIR$/db/screeningDB/deleteScreeningFromDB.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="73" column="60" selection-start-line="73" selection-start-column="60" selection-end-line="73" selection-end-column="60" />
+        <state relative-caret-position="48">
+          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/Home.jsx">
+    <entry file="das://69f252ed-db2e-4bcd-9ce1-b9e56f27002a/database/d2c4hvp7vmap73/schema/public/table/screening">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Admin/Screening/Screening.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="33" column="59" selection-start-line="33" selection-start-column="59" selection-end-line="33" selection-end-column="59" />
+        <state relative-caret-position="24">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Admin/Screening/AddScreening/less/input-moment.less">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/69f252ed-db2e-4bcd-9ce1-b9e56f27002a/console_8.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="48">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Admin/Screening/AddScreening/less/input-moment.css">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" column="201" selection-start-line="14" selection-start-column="201" selection-end-line="14" selection-end-column="201" />
+        <state relative-caret-position="360">
+          <caret line="15" column="215" selection-start-line="15" selection-start-column="215" selection-end-line="15" selection-end-column="215" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/Slider/Slider.sass">
+    <entry file="file://$PROJECT_DIR$/db/movieDB/findAllMovies.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="48">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/Slider/Arrows/Arrows.sass">
+    <entry file="file://$PROJECT_DIR$/src/components/Admin/Screening/ScreeningList/ScreeningList.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/Slider/Arrows/Arrows.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
-          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+        <state relative-caret-position="914">
+          <caret line="69" column="91" selection-start-line="69" selection-start-column="91" selection-end-line="69" selection-end-column="91" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Nav/Nav.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="74" column="50" selection-start-line="74" selection-start-column="50" selection-end-line="74" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Admin/Admin.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Admin/Movie/MovieList/MovieLIst.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Admin/Movie/Movie.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Admin/Screening/AddScreening/AddScreening.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="669">
+          <caret line="37" column="20" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://69f252ed-db2e-4bcd-9ce1-b9e56f27002a/database/d2c4hvp7vmap73/schema/public/table/movie">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.es6">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="864">
+          <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_4.es6">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_3.es6">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_2.es6">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.es6">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/variables.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Admin/Admin.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="40" column="56" selection-start-line="40" selection-start-column="56" selection-end-line="40" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ducks/screening_reducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="64" column="54" selection-start-line="64" selection-start-column="54" selection-end-line="64" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/movieDB/updateMovieInfo.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/controllers/moviesController/moviesControllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1811">
+          <caret line="28" column="37" lean-forward="true" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Admin/Movie/EditMovie/EditMovie.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-728">
+          <caret line="101" column="41" selection-start-line="101" selection-start-column="35" selection-end-line="101" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_5.es6">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="35" lean-forward="true" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Admin/Movie/AddMovie/AddMovie.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="41" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Admin/Movie/AddMovie/AddMovie.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3066">
+          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Admin/Movie/Movie.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Admin/Movie/Movie.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="26" column="42" lean-forward="true" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="103" column="45" selection-start-line="103" selection-start-column="45" selection-end-line="103" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Admin/Movie/MovieList/MovieList.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Admin/Movie/EditMovie/EditMovie.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="984">
+          <caret line="41" column="32" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Admin/Movie/MovieList/MovieLIst.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
         </state>
       </provider>
     </entry>

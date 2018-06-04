@@ -3,19 +3,38 @@
 
 .add-screening
 	margin-top: 50px
+	display: flex
+	flex-wrap: nowrap
+	justify-content: space-between
+	align-items: center
+	width: 75%
 	select, input
 		height: 33px
 		margin-left: 0
 		border-collapse: collapse
+		font: 14px 'Roboto'
+		margin-right: 5px
+		display: inline-block
+		flex-grow: 4
+		padding: 5px
+		border: 1px solid #000000
+		border-radius: 5px
+		box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5)
+		outline: none
 	.date-time-input
 		display: inline-block
 		position: relative
+		flex-grow: 4
 		.m-input-moment
 			position: absolute
 			left: 0
-			top: 0
-	.ion
-		display: block
-		font-size: 48px
+			top: 43px
+			background-color: #FFFFFF
+			box-shadow: 0 0 15px rgba(0, 0, 0, 0.5)
+	.fas
+		display: inline-block
+		font-size: 33px
 		color: $submit-color
-		margin-top: 30px
+		box-shadow: 0 0 6px rgba(0, 0, 0, 0.5)
+		cursor: pointer
+		border-radius: 50%

@@ -1,8 +1,11 @@
 import React, {Component} from 'react';
 import MovieList from './MovieList/MovieList';
-import axios from 'axios';
+import {Link} from 'react-router-dom';
+import {connect} from 'react-redux';
+import {updateMovies} from '../../../ducks/screening_reducer';
+import './Movie.css'
 
-export default class Movie extends Component {
+class Movie extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -11,17 +14,27 @@ export default class Movie extends Component {
 	}
 
 	componentWillMount() {
-		axios.get()
+		this.props.updateMovies();
 	}
 
 
 	render() {
 		return (
 			<div className="movie">
-
+				<MovieList/>
+				<div>
+					<Link to="/admin/movie/add-movie">
+						<i className="fas fa-plus-circle"></i>
+					</Link>
+				</div>
 			</div>
 		);
 	}
 
-
 }
+
+function mapStateToProps({showtimes}) {
+	return {}
+}
+
+export default connect(mapStateToProps, {updateMovies})(Movie);

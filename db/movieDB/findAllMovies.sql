@@ -1,2 +1,3 @@
 SELECT *
-FROM movie;
+FROM movie
+ORDER BY title ASC;

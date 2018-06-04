@@ -6,7 +6,7 @@ module.exports = {
 		console.log(req.body);
 
 		let {
-				title, director, cast, writer, studio,
+				title, director, actors: actors, writer, studio,
 				description, duration_min, genre, mpaa,
 				tagline, release_date, imdb_rating,
 				poster_pic, banner_pic
@@ -14,7 +14,7 @@ module.exports = {
 
 		duration_min = parseInt(duration_min);
 
-		db.movieDB.addMovieToDB([title, director, cast, writer, studio,
+		db.movieDB.addMovieToDB([title, director, actors, writer, studio,
 								 description, duration_min, genre, mpaa,
 								 tagline, release_date, imdb_rating,
 								 poster_pic, banner_pic])
@@ -26,18 +26,18 @@ module.exports = {
 		const db = req.app.get('db');
 
 		let {
-				id, title, director, cast, writer, studio,
+				id, title, director, actors, writer, studio,
 				description, duration_min, genre, mpaa,
 				tagline, release_date, imdb_rating,
-				poster_pic, banner_pic
+				poster_pic, banner_pic, on_screen
 			} = req.body;
 
 		duration_min = parseInt(duration_min);
 
-		db.movieDB.updateMovieInfo([id, title, director, cast, writer, studio,
+		db.movieDB.updateMovieInfo([id, title, director, actors, writer, studio,
 									description, duration_min, genre, mpaa,
 									tagline, release_date, imdb_rating,
-									poster_pic, banner_pic])
+									poster_pic, banner_pic, on_screen])
 		  .then((movie) => {
 			  if (movie.length) {
 				  res.status(200).send(movie);
@@ -45,7 +45,10 @@ module.exports = {
 				  res.status(404).send('Movie not found');
 			  }
 		  })
-		  .catch((err) => res.status(500).send(err));
+		  .catch((err) => {
+			  res.status(500).send(err);
+			  console.error(err);
+		  });
 	},
 
 	deleteMovie: (req, res, next) => {

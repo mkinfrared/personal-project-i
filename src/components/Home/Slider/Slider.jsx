@@ -72,15 +72,14 @@ class Slider extends Component {
 			<div className="slider" ref="slider">
 				{slides}
 				<Arrows handleArrowClick={this.handleArrowClick}/>
-				<i className="ion ion-md-remove-circle"></i>
 			</div>
 		);
 	}
 
 }
 
-function mapStateToProps({screenings, slide}) {
-	const {moviesOnScreen}         = screenings,
+function mapStateToProps({showtimes, slide}) {
+	const {moviesOnScreen}         = showtimes,
 		  {maxCount, currentIndex} = slide;
 
 	return {moviesOnScreen, maxCount, currentIndex};

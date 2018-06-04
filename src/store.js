@@ -7,7 +7,7 @@ import sliderReducer from './ducks/slider_reducer';
 import urlsReducer from './ducks/urls_reducer';
 
 const reducers = combineReducers({
-	screenings : screeningReducer,
+	showtimes  : screeningReducer,
 	users      : userReducer,
 	slide      : sliderReducer,
 	url_address: urlsReducer

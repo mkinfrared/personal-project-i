@@ -100,22 +100,23 @@ app.get('/auth/me', (req, res) => {
 
 // MOVIE CONTROLLERS
 
-app.post('/api/movie/add_movie', mc.addMovie);
-app.put('/api/movie/update_movie', mc.updateMovie);
-app.delete('/api/movie/delete_movie', mc.deleteMovie);
-app.get('/api/movie/:movie_id', mc.getMovie);
-app.get('/api/screenings', mc.getAllMovies);
-app.get('/api/screenings/movies_on_screen', mc.getMoviesOnScreen);
+app.post('/api/movies/add_movie', mc.addMovie);
+app.put('/api/movies/update_movie', mc.updateMovie);
+app.delete('/api/movies/delete_movie', mc.deleteMovie);
+app.get('/api/movies', mc.getAllMovies);
+app.get('/api/movies/:movie_id', mc.getMovie);
+app.get('/api/showtimes/movies_on_screen', mc.getMoviesOnScreen);
 
 // AUDITORIUM CONTROLLERS
 
-app.get('/api/auditorium/get_auditoriums', ac.getAuditoriums);
+app.get('/api/auditorium_id/get_auditoriums', ac.getAuditoriums);
 
 
 // SCREENING CONTROLLERS
 
 app.post('/api/screening/create_screening', sc.addScreening);
-app.get('/api/screenings', sc.getScreenings);
+app.get('/api/showtimes', sc.getScreenings);
+app.delete('/api/screening/:id', sc.deleteScreening);
 
 // SEAT CONTROLLERS
 

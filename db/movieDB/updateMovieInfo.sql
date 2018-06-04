@@ -13,6 +13,7 @@ SET
 	release_date = $12,
 	imdb_rating  = $13,
 	poster_pic   = $14,
-	banner_pic   = $15
+	banner_pic   = $15,
+	on_screen    = $16
 WHERE id = $1
 RETURNING *;

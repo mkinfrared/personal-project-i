@@ -22,10 +22,10 @@ class Nav extends Component {
 	}
 
 	componentWillReceiveProps(nextProps) {
-		console.log(nextProps.currentURL);
 		if (nextProps.currentURL === '/') {
 			this.positionStyle = {
-				position: 'absolute'
+				position: 'absolute',
+				opacity: 0.8
 			}
 		} else {
 			this.positionStyle = {};
@@ -58,21 +58,21 @@ class Nav extends Component {
 		const {admin} = this.props.user || false;
 
 		return (
-			<nav ref="navigation" style={this.positionStyle}>
+			<nav ref="navigation" style={this.positionStyle} className="home-navbar navbar navbar-dark bg-dark">
 				<div className="logo">
 					<img src="/images/logo-without-url.png" alt="logo"/>
 					<p>Majestic</p>
 				</div>
-				<ul>
-					<li>
-						<Link to="/">Home</Link>
+				<ul className="nav-pills nav-fill">
+					<li className="nav-item">
+						<Link className={'nav-link active'} to="/">Home</Link>
 					</li>
 					<li>
 						<Link to="/showtimes">Movies</Link>
 					</li>
 					{(admin) ?
 						<li>
-							<Link to="/admin">Admin</Link>
+							<Link to="/admin/movie">Admin</Link>
 						</li>
 						: null}
 				</ul>
