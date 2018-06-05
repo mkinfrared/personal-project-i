@@ -106,6 +106,7 @@ app.delete('/api/movies/delete_movie', mc.deleteMovie);
 app.get('/api/movies', mc.getAllMovies);
 app.get('/api/movies/:movie_id', mc.getMovie);
 app.get('/api/showtimes/movies_on_screen', mc.getMoviesOnScreen);
+app.get('/api/showtimes/movies_with_showtime', mc.getMoviesWithShowtimes);
 
 // AUDITORIUM CONTROLLERS
 

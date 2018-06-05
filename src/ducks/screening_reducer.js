@@ -4,13 +4,17 @@ const initialState = {
 	movies          : [],
 	moviesOnScreen  : [],
 	screenings      : [],
-	currentMovieInfo: {}
+	currentMovieInfo: {},
+	showtimeMovies  : [],
+	comingSoonMovies: []
 };
 
 const UPDATE_MOVIES_ONSCREEN    = 'UPDATE_MOVIES_ONSCREEN',
 	  UPDATE_SCREENINGS         = 'UPDATE_SCREENINGS',
 	  UPDATE_MOVIES             = 'UPDATE_MOVIES',
-	  UPDATE_CURRENT_MOVIE_INFO = 'UPDATE_CURRENT_MOVIE_INFO';
+	  UPDATE_CURRENT_MOVIE_INFO = 'UPDATE_CURRENT_MOVIE_INFO',
+	  UPDATE_SHOWTIME_MOVIES    = 'UPDATE_SHOWTIME_MOVIES',
+	  UPDATE_COMING_SOON        = 'UPDATE_COMING_SOON';
 
 export default function screeningReducer(state = initialState, action) {
 	switch (action.type) {
@@ -22,6 +26,10 @@ export default function screeningReducer(state = initialState, action) {
 			return Object.assign({}, state, {movies: action.payload});
 		case UPDATE_CURRENT_MOVIE_INFO + '_FULFILLED':
 			return Object.assign({}, state, {currentMovieInfo: action.payload});
+		case UPDATE_SHOWTIME_MOVIES + '_FULFILLED':
+			return Object.assign({}, state, {showtimeMovies: action.payload});
+		case UPDATE_COMING_SOON + '_FULFILLED':
+			return Object.assign({}, state, {comingSoonMovies: action.payload});
 		default:
 			return state;
 	}
@@ -68,5 +76,32 @@ export function updateCurrentMovieInfo(id) {
 	return {
 		type   : UPDATE_CURRENT_MOVIE_INFO,
 		payload: movieInfo
+	}
+}
+
+export function updateShowtimeMovies() {
+	const movieList = axios.get('/api/showtimes/movies_with_showtime')
+						   .then((movies) => movies.data)
+						   .catch((err) => console.error(err));
+
+	return {
+		type   : UPDATE_SHOWTIME_MOVIES,
+		payload: movieList
+	}
+}
+
+export function updateComingSoon() {
+	const movieLIst = axios.get('/api/movies')
+						   .then((movies) => {
+							   movies = movies.data.filter((elem) => {
+								   const day = 24 * 60 * 60 * 1000;
+								   new Date(elem.release_date).getTime() > new Date().getTime() + (3 * day);
+							   });
+							   return movies;
+						   });
+
+	return {
+		type   : UPDATE_COMING_SOON,
+		payload: movieLIst
 	}
 }

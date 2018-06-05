@@ -112,5 +112,16 @@ module.exports = {
 			  console.log(err);
 			  res.status(500).send(err);
 		  });
+	},
+
+	getMoviesWithShowtimes: (req, res, next) => {
+		const db = req.app.get('db');
+
+		db.movieDB.getMoviesWithShowtimes()
+		  .then((movieList) => res.status(200).send(movieList))
+			.catch((err) => {
+				res.status(500).send(err);
+				console.error(err);
+			});
 	}
 };

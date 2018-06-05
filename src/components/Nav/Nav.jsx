@@ -68,7 +68,7 @@ class Nav extends Component {
 						<Link className={'nav-link active'} to="/">Home</Link>
 					</li>
 					<li>
-						<Link to="/showtimes">Movies</Link>
+						<Link to="/showtimes">Showtimes</Link>
 					</li>
 					{(admin) ?
 						<li>
