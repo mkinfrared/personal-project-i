@@ -31,6 +31,7 @@
   font-family: "Roboto";
   font-size: 18px;
   text-transform: uppercase;
+  outline: none;
 }
 .home-navbar ul li Link .active-nav, .home-navbar ul li a .active-nav {
   color: #000000;
