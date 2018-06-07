@@ -10,6 +10,7 @@
     "express": "^4.16.3",
     "express-session": "^1.15.6",
     "input-moment": "^0.4.0",
+    "less": "^3.0.4",
     "lodash": "^4.17.10",
     "massive": "^4.8.3",
     "moment": "^2.22.2",
@@ -27,7 +28,8 @@
     "react-toastify": "^4.0.1",
     "redux": "^4.0.0",
     "redux-devtools-extension": "^2.13.2",
-    "redux-promise-middleware": "^5.1.1"
+    "redux-promise-middleware": "^5.1.1",
+    "sass": "^1.5.1"
   },
   "scripts": {
     "start": "react-scripts start",
