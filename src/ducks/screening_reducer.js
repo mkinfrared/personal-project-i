@@ -4,6 +4,7 @@ const initialState = {
 	movies          : [],
 	moviesOnScreen  : [],
 	screenings      : [],
+	currentScreening: [],
 	currentMovieInfo: {},
 	showtimeMovies  : [],
 	comingSoonMovies: []
@@ -14,7 +15,8 @@ const UPDATE_MOVIES_ONSCREEN    = 'UPDATE_MOVIES_ONSCREEN',
 	  UPDATE_MOVIES             = 'UPDATE_MOVIES',
 	  UPDATE_CURRENT_MOVIE_INFO = 'UPDATE_CURRENT_MOVIE_INFO',
 	  UPDATE_SHOWTIME_MOVIES    = 'UPDATE_SHOWTIME_MOVIES',
-	  UPDATE_COMING_SOON        = 'UPDATE_COMING_SOON';
+	  UPDATE_COMING_SOON        = 'UPDATE_COMING_SOON',
+	  UPDATE_CURRENT_SCREENING  = 'UPDATE_CURRENT_SCREENING';
 
 export default function screeningReducer(state = initialState, action) {
 	switch (action.type) {
@@ -30,6 +32,8 @@ export default function screeningReducer(state = initialState, action) {
 			return Object.assign({}, state, {showtimeMovies: action.payload});
 		case UPDATE_COMING_SOON + '_FULFILLED':
 			return Object.assign({}, state, {comingSoonMovies: action.payload});
+		case UPDATE_CURRENT_SCREENING + '_FULFILLED':
+			return Object.assign({}, state, {currentScreening: action.payload});
 		default:
 			return state;
 	}
@@ -103,5 +107,16 @@ export function updateComingSoon() {
 	return {
 		type   : UPDATE_COMING_SOON,
 		payload: movieLIst
+	}
+}
+
+export function updateCurrentScreening(screeningID) {
+	const screeningInfo = axios.get(`/api/seat/get/${screeningID}`)
+							   .then((resp) => resp.data)
+							   .catch((err) => console.error(err));
+
+	return {
+		type   : UPDATE_CURRENT_SCREENING,
+		payload: screeningInfo
 	}
 }

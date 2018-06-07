@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
 import {updateScreenings} from '../../ducks/screening_reducer';
 import {urlChange} from '../../ducks/urls_reducer';
@@ -40,7 +41,6 @@ class Showtimes extends Component {
 
 			for (const displayKey in display) {
 				const showObj = display[displayKey];
-				console.log(showObj);
 
 				let auditoriumName = Object.keys(_.groupBy(display[displayKey], 'name'));
 
@@ -51,6 +51,7 @@ class Showtimes extends Component {
 						 </div>
 						 <div className="showtime-info">
 							 <h4>{showObj[0].title}</h4>
+							 <hr/>
 							 <div>
 								 {auditoriumName.map((audName) => {
 									 return (
@@ -58,9 +59,11 @@ class Showtimes extends Component {
 											 <p>{audName}:</p>
 											 {showObj.map((elem) => {
 												 return (elem.name === audName)
-													 ? <li key={elem.id}>
-														 {new Date(elem.screening_start).toLocaleTimeString("en-US", options)}
-													 </li>
+													 ? <Link key={elem.id} to={`/showtimes/${elem.id}`}>
+														 <li>
+															 {new Date(elem.screening_start).toLocaleTimeString("en-US", options)}
+														 </li>
+													 </Link>
 													 : null;
 											 })}
 										 </ul>
@@ -74,6 +77,7 @@ class Showtimes extends Component {
 			showtimesDisplay.push(
 				<div key={key}>
 					<h3>{key}</h3>
+					<hr/>
 					{a}
 				</div>
 			);

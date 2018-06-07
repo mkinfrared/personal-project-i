@@ -9,7 +9,8 @@ const express       = require('express'),
 	  mc            = require('./controllers/moviesController/moviesControllers'),
 	  ac            = require('./controllers/auditoriumController/auditoriumController'),
 	  sc            = require('./controllers/screeningController/screeningController'),
-	  stc           = require('./controllers/seatsController/seatsController');
+	  stc           = require('./controllers/seatsController/seatsController'),
+	  path          = require('path');
 
 const {
 		  CONNECTION_STRING,
@@ -22,6 +23,8 @@ const {
 	  } = process.env;
 
 const app = express();
+
+app.use(express.static(`${__dirname}/../build`));
 
 app.use(bodyParser.json());
 
@@ -82,8 +85,8 @@ passport.deserializeUser((profile, done) => {
 app.get('/login', passport.authenticate('auth0'));
 
 app.get('/auth/callback', passport.authenticate('auth0', {
-	successRedirect: 'http://localhost:3000/#/',
-	failureRedirect: 'http:://localhost:3000/login'
+	successRedirect: process.env.SUCCESS_REDIRECT,
+	failureRedirect: process.env.FAILURE_REDIRECT
 }));
 
 app.get('/auth/me', (req, res) => {

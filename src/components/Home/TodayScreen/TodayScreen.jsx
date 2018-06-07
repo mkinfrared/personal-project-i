@@ -20,8 +20,6 @@ class TodayScreen extends Component {
 	componentWillReceiveProps(nextProps) {
 		let {showtimeMovies, comingSoonMovies} = nextProps;
 
-		console.log(nextProps);
-
 		showtimeMovies = showtimeMovies.map((movie) => {
 			return (
 				<div key={movie.id} className="movie-card">

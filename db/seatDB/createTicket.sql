@@ -1,11 +1,11 @@
 WITH reserve_ins AS (
-	INSERT INTO demo_reservation
+	INSERT INTO reservation
 	(screening_id, reserved, paid, active)
 	VALUES
 		($1, TRUE, TRUE, FALSE)
 	RETURNING id
 ), seat_res_ins AS (
-	INSERT INTO demo_seat_reserved
+	INSERT INTO seat_reserved
 	(seat_id, reservation_id, screening_id)
 		SELECT
 			unnest(ARRAY [$2]),
@@ -13,9 +13,9 @@ WITH reserve_ins AS (
 			$1
 		FROM reserve_ins
 		WHERE NOT EXISTS(SELECT id
-										 FROM demo_seat_reserved
+										 FROM seat_reserved
 										 WHERE seat_id = ANY (ARRAY [$2]) AND screening_id = $1)
-		LIMIT 1
+-- 		LIMIT 1
 	RETURNING seat_id AS reserved_seat, reservation_id)
 SELECT
 	seat.number,

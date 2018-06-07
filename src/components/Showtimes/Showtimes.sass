@@ -1,26 +1,46 @@
+@import "../variables"
+
 .showtimes
 	min-height: 100vh
 	text-align: center
-	background-color: #000000
-	color: #FFFFFF
-	padding: 40px
-	h2, h3
+	background-color: #FFFFFF
+	color: #000000
+	h2
+		text-transform: uppercase
+		font: 32px 'Raleway'
+		font-weight: bold
+		background-color: $accent-color
+		padding: 20px 0
+		color: #FFFFFF
+	h2
 		margin-bottom: 40px
+	h3
+		font: 32px 'Roboto'
+		margin-bottom: 10px
+	hr
+		margin-bottom: 40px
+		background-color: $accent-color
+		height: 1px
 	h4
-		margin-bottom: 40px
+		margin-bottom: 10px
 	.showtime-card
+		width: 90%
 		height: 450px
-		margin-bottom: 50px
+		margin: 0 auto 50px
 		display: flex
 		flex-wrap: wrap
-		box-shadow: 0 0 20px rgba(0, 123, 255, 0.7)
+		box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5)
+		background-color: #000000
+		color: #FFFFFF
+		hr
+			background-color: $accent-color
+			margin-bottom: 50px
 		div
 			text-align: center
 			height: 100%
 			img
 				height: 100%
 		.showtime-info
-			outline: 1px solid red
 			text-align: center
 			flex-grow: 2
 			padding: 40px
@@ -29,16 +49,20 @@
 				display: flex
 				justify-content: flex-start
 				align-items: baseline
+				margin-bottom: 50px
 				p
 					width: 50px
 					margin-right: 10px
 				li
 					box-sizing: content-box
 					display: block
-					background-color: red
+					background-color: $accent-color
 					margin-right: 5px
 					height: 23px
 					width: 70px
 					padding: 5px 10px
 					text-align: center
 					border-radius: 7px
+				a
+					text-decoration: none
+					color: #FFFFFF

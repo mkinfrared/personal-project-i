@@ -1,0 +1,43 @@
+@import "../variables"
+
+.ticket-purchase
+	text-align: center
+	padding: 10px
+	.seat-options
+		width: 700px
+		//min-width: 576px
+		margin: 0 auto 50px
+		overflow-x: auto
+		ul
+			display: flex
+			justify-content: space-between
+			align-items: center
+			vertical-align: center
+			p
+				margin: 0 auto 0 0
+				font-size: 18px
+			li
+				width: 40px
+				height: 40px
+				margin-right: 10px
+				display: flex
+				justify-content: center
+				align-items: center
+				box-shadow: 0 0 7px rgba(0, 0, 0, 0.5)
+				border-radius: 5px
+				&:nth-child(2)
+					margin-left: 20px
+				&:last-child
+					margin-right: auto
+	.reserved
+		background-color: $warning-color
+		color: #FFFFFF
+		cursor: pointer
+	.available
+		cursor: pointer
+		background-color: $submit-color
+		color: #FFFFFF
+	.unavailable
+		background-color: $cancel-color
+		color: #000000
+		cursor: context-menu
