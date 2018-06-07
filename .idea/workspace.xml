@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8e64669d-6fcd-4945-8484-4535f65bec04" name="Default" comment="learning production">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Admin/Movie/AddMovie/AddMovie.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin/Movie/AddMovie/AddMovie.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Admin/Movie/EditMovie/EditMovie.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin/Movie/EditMovie/EditMovie.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Admin/Movie/Movie.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin/Movie/Movie.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Showtimes/Showtimes.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Showtimes/Showtimes.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TicketPurchase/TicketPurchase.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TicketPurchase/TicketPurchase.sass" afterDir="false" />
+    <list default="true" id="8e64669d-6fcd-4945-8484-4535f65bec04" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/src/components/Admin/Admin.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin/Admin.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -83,25 +77,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AddMovie.sass" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Admin/Movie/AddMovie/AddMovie.sass">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EditMovie.sass" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Admin/Movie/EditMovie/EditMovie.sass">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="7" column="18" lean-forward="true" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="variables.sass" pinned="false" current-in-tab="true">
+      <file leaf-file-name="variables.sass" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/variables.sass">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="72">
@@ -110,11 +86,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Movie.sass" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Admin/Movie/Movie.sass">
+      <file leaf-file-name=".env" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.env">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="29" selection-start-column="29" selection-end-column="29" />
+            <state relative-caret-position="216">
+              <caret line="9" column="45" lean-forward="true" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Admin.jsx" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/Admin/Admin.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".env.prod" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.env.prod">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -158,11 +155,6 @@
               <caret column="26" selection-start-column="26" selection-end-column="26" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MovieLIst.sass" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Admin/Movie/MovieList/MovieLIst.sass">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -215,7 +207,6 @@
         <option value="$PROJECT_DIR$/src/components/Admin/Movie/Movie.jsx" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_5.es6" />
         <option value="$PROJECT_DIR$/src/components/Admin/Movie/MovieList/MovieList.jsx" />
-        <option value="$PROJECT_DIR$/src/components/Admin/Admin.jsx" />
         <option value="$PROJECT_DIR$/db/movieDB/updateMovieInfo.sql" />
         <option value="$PROJECT_DIR$/src/components/Admin/Movie/AddMovie/AddMovie.jsx" />
         <option value="$PROJECT_DIR$/src/components/Admin/Movie/EditMovie/EditMovie.jsx" />
@@ -256,6 +247,7 @@
         <option value="$PROJECT_DIR$/src/components/Footer/Footer.sass" />
         <option value="$PROJECT_DIR$/src/components/Showtimes/Showtimes.sass" />
         <option value="$PROJECT_DIR$/src/components/TicketPurchase/TicketPurchase.sass" />
+        <option value="$PROJECT_DIR$/src/components/Admin/Admin.jsx" />
       </list>
     </option>
   </component>
@@ -396,6 +388,12 @@
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="TicketPurchase" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="personal-project-i" type="b2602c69:ProjectViewProjectNode" />
+              <item name="personal-project-i" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ducks" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -501,7 +499,7 @@
       <workItem from="1528061545602" duration="27273000" />
       <workItem from="1528148142016" duration="4736000" />
       <workItem from="1528216417257" duration="41459000" />
-      <workItem from="1528390373659" duration="4379000" />
+      <workItem from="1528390373659" duration="6983000" />
     </task>
     <task id="LOCAL-00001" summary="created database schema and file structure">
       <created>1526942514907</created>
@@ -629,11 +627,18 @@
       <option name="project" value="LOCAL" />
       <updated>1528394663682</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="learning production">
+      <created>1528394982876</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1528394982876</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="335920000" />
+    <option name="totallyTimeSpent" value="338524000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -646,6 +651,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1691" height="917" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32894737" />
       <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" weight="0.32894737" />
@@ -725,20 +731,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/server/controllers/screeningController/screeningController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1584">
-          <caret line="15" column="72" lean-forward="true" selection-start-line="15" selection-start-column="72" selection-end-line="15" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://69f252ed-db2e-4bcd-9ce1-b9e56f27002a/database/d2c4hvp7vmap73/schema/public/table/movie">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/movieDB/getMoviesWithShowtimes.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
@@ -817,13 +809,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ducks/screening_reducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="113" column="51" selection-start-line="113" selection-start-column="51" selection-end-line="113" selection-end-column="51" />
         </state>
       </provider>
     </entry>
@@ -975,13 +960,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="9" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Admin/Movie/AddMovie/AddMovie.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -999,13 +977,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
           <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env.prod">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -1068,6 +1039,40 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env.prod">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ducks/user_reducer.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ducks/screening_reducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2712">
+          <caret line="113" column="51" selection-start-line="113" selection-start-column="51" selection-end-line="113" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="45" lean-forward="true" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Admin/Admin.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
