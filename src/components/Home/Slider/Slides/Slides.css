@@ -1,0 +1,8 @@
+.slides {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  transform: translateX(0);
+  transition: transform 0.4s linear; }
+
+/*# sourceMappingURL=Slides.css.map */

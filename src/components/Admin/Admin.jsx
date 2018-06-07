@@ -34,14 +34,12 @@ class Admin extends Component {
 						</li>
 					</ul>
 				</nav>
-				{/*{user && user.admin &&*/}
-				 <Switch>
-					 <Route exact path="/admin/movie" component={Movie}/>
-					 <Route path="/admin/movie/add-movie" component={AddMovie}/>
-					 <Route path="/admin/screening" component={Screening}/>
-					 <Route path={`/admin/movie/:movie_id`} component={EditMovie}/>
-				 </Switch>
-				{/*}*/}
+				<Switch>
+					<Route exact path="/admin/movie" component={Movie}/>
+					<Route path="/admin/movie/add-movie" component={AddMovie}/>
+					<Route path="/admin/screening" component={Screening}/>
+					<Route path={`/admin/movie/:movie_id`} component={EditMovie}/>
+				</Switch>
 			</div>
 		);
 	}

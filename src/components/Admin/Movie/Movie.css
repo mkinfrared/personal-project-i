@@ -1,0 +1,22 @@
+.movie {
+  flex-direction: column;
+  align-items: center;
+}
+.movie div {
+  display: flex;
+  justify-content: center;
+}
+.movie div a {
+  text-decoration: none;
+}
+.movie div .fas {
+  display: block;
+  color: #28A745;
+  font-size: 48px;
+  margin-top: 30px;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/*# sourceMappingURL=Movie.css.map */
