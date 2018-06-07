@@ -1,0 +1,45 @@
+@import "less/input-moment.css";
+.add-screening {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 75%;
+}
+.add-screening select, .add-screening input {
+  height: 33px;
+  margin-left: 0;
+  border-collapse: collapse;
+  font: 14px "Roboto";
+  margin-right: 5px;
+  display: inline-block;
+  flex-grow: 4;
+  padding: 5px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  outline: none;
+}
+.add-screening .date-time-input {
+  display: inline-block;
+  position: relative;
+  flex-grow: 4;
+}
+.add-screening .date-time-input .m-input-moment {
+  position: absolute;
+  left: 0;
+  top: 43px;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+.add-screening .fas {
+  display: inline-block;
+  font-size: 33px;
+  color: #28A745;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+/*# sourceMappingURL=AddScreening.css.map */

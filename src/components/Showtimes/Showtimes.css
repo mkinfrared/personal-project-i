@@ -1,0 +1,83 @@
+.showtimes {
+  min-height: 100vh;
+  text-align: center;
+  background-color: #FFFFFF;
+  color: #000000;
+}
+.showtimes h2 {
+  text-transform: uppercase;
+  font: 32px "Raleway";
+  font-weight: bold;
+  background-color: #007BFF;
+  padding: 20px 0;
+  color: #FFFFFF;
+}
+.showtimes h2 {
+  margin-bottom: 40px;
+}
+.showtimes h3 {
+  font: 32px "Roboto";
+  margin-bottom: 10px;
+}
+.showtimes hr {
+  margin-bottom: 40px;
+  background-color: #007BFF;
+  height: 1px;
+}
+.showtimes h4 {
+  margin-bottom: 10px;
+}
+.showtimes .showtime-card {
+  width: 90%;
+  height: 450px;
+  margin: 0 auto 50px;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+  background-color: #000000;
+  color: #FFFFFF;
+}
+.showtimes .showtime-card hr {
+  background-color: #007BFF;
+  margin-bottom: 50px;
+}
+.showtimes .showtime-card div {
+  text-align: center;
+  height: 100%;
+}
+.showtimes .showtime-card div img {
+  height: 100%;
+}
+.showtimes .showtime-card .showtime-info {
+  text-align: center;
+  flex-grow: 2;
+  padding: 40px;
+}
+.showtimes .showtime-card .showtime-info ul {
+  text-align: left;
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  margin-bottom: 50px;
+}
+.showtimes .showtime-card .showtime-info ul p {
+  width: 50px;
+  margin-right: 10px;
+}
+.showtimes .showtime-card .showtime-info ul li {
+  box-sizing: content-box;
+  display: block;
+  background-color: #007BFF;
+  margin-right: 5px;
+  height: 23px;
+  width: 70px;
+  padding: 5px 10px;
+  text-align: center;
+  border-radius: 7px;
+}
+.showtimes .showtime-card .showtime-info ul a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+/*# sourceMappingURL=Showtimes.css.map */
