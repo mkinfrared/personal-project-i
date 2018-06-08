@@ -10,6 +10,7 @@ const express       = require('express'),
 	  ac            = require('./controllers/auditoriumController/auditoriumController'),
 	  sc            = require('./controllers/screeningController/screeningController'),
 	  stc           = require('./controllers/seatsController/seatsController'),
+	  stripe        = require('stripe')(process.env.STRIPE_PRIVATE_KEY),
 	  path          = require('path');
 
 const {
@@ -126,5 +127,31 @@ app.delete('/api/screening/:id', sc.deleteScreening);
 
 app.post('/api/seat/reserve/:screening_id', stc.buyTickets);
 app.get('/api/seat/get/:screening_id', stc.getSeats);
+
+// STRIPE CONTROLLER
+
+app.post('/api/payment', (req, res, next) => {
+	let {amount} = req.body;
+
+	amount = parseFloat(amount).toFixed(2) * 100;
+	// amount = parseInt(amount);
+
+	console.log(amount);
+
+	const charge = stripe.charges.create({
+		amount     : amount,
+		currency   : 'usd',
+		source     : req.body.token.id,
+		description: 'Test charge from Majestic app'
+	}, (err, charge) => {
+		if (err) {
+			res.status(500).send(err);
+		}
+		res.status(200).send(charge);
+		// if (err && err.type === 'StripeCardError') {
+		//   // The card has been declined
+		// }
+	})
+});
 
 app.listen(SERVER_PORT, () => console.log(`Working on port ${SERVER_PORT}`));

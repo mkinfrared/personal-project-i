@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import _ from 'lodash';
 import axios from 'axios';
 import SeatOptions from './SeatOptions/SeatOptions';
+import StripeCheckout from 'react-stripe-checkout';
 import PaymentOptions from './PaymentOptions/PaymentOptions';
 import {connect} from 'react-redux';
 import {updateCurrentScreening} from '../../ducks/screening_reducer';
@@ -14,12 +15,13 @@ class TicketPurchase extends Component {
 		super(props);
 		this.state = {
 			seatsWanted: [],
+			price      : 12,
 			step       : 0
 		};
 
 		this.addSeatsWanted = this.addSeatsWanted.bind(this);
-		this.increseStep    = this.increseStep.bind(this);
 		this.buyTickets     = this.buyTickets.bind(this);
+		// this.onToken        = this.onToken.bind(this);
 
 	}
 
@@ -55,11 +57,19 @@ class TicketPurchase extends Component {
 
 	}
 
-	increseStep() {
-		let {step} = this.state;
-		step++;
-		this.setState({step})
-	}
+	onToken = (token) => {
+		const {price, seatsWanted} = this.state;
+
+		const amount = price * seatsWanted.length;
+
+		token.card = void 0;
+		axios.post('/api/payment', {
+			token,
+			amount: amount /* the amount actually charged*/
+		})
+			 .then(() => this.props.history.push('/payment-success'))
+			 .catch((err) => console.log(err));
+	};
 
 	buyTickets() {
 		const {seatsWanted}  = this.state,
@@ -75,14 +85,15 @@ class TicketPurchase extends Component {
 
 	render() {
 		const {currentScreening, step} = this.state;
-		const options                  = {
+
+		const options = {
 			year  : 'numeric',
 			month : 'long',
 			day   : 'numeric',
 			hour  : '2-digit',
 			minute: '2-digit'
 		};
-
+		console.log(this.props);
 		return (
 			<div className="ticket-purchase">
 				<h2>{(currentScreening) ? currentScreening[0].movie_title : null}</h2>
@@ -94,13 +105,7 @@ class TicketPurchase extends Component {
 				 <SeatOptions currentScreening={currentScreening}
 							  addSeatsWanted={this.addSeatsWanted}/> :
 				 <PaymentOptions/>}
-				{(step === 0) ?
-				 <button onClick={() => this.increseStep()}>
-					 Next
-				 </button> :
-				 <button onClick={() => this.buyTickets()}>
-					 Submit
-				 </button>}
+				<StripeCheckout token={this.onToken} stripeKey={'pk_test_wBkuXuLvbwt2XNQFdNXNNqeb'}/>
 				<ToastContainer/>
 			</div>
 		);

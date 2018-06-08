@@ -1,6 +1,7 @@
 import React from 'react';
 import _ from "lodash";
 
+
 export default function SeatOptions(props) {
 	const {currentScreening} = props;
 
