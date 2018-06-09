@@ -42,11 +42,24 @@ class Showtimes extends Component {
 			for (const displayKey in display) {
 				const showObj = display[displayKey];
 
+				const style = {
+					backgroundImage: `url("${showObj[0].poster_pic}")`,
+					filter         : 'blur(2px)',
+					filter         : 'brightness(80%)',
+					width          : '110%',
+					height         : '470px',
+					position       : 'absolute',
+					zIndex         : '-1',
+					left           : '-10px',
+					top            : '-10px'
+				}
+
 				let auditoriumName = Object.keys(_.groupBy(display[displayKey], 'name'));
 
 				a = [...a,
 					 <div className="showtime-card" key={showObj[0].movie_id}>
-						 <div>
+						 <div className="showtime-poster">
+							 <div className="background-poster" style={style}></div>
 							 <img src={showObj[0].poster_pic} alt=""/>
 						 </div>
 						 <div className="showtime-info">
@@ -59,12 +72,12 @@ class Showtimes extends Component {
 											 <p>{audName}:</p>
 											 {showObj.map((elem) => {
 												 return (elem.name === audName)
-													 ? <Link key={elem.id} to={`/showtimes/${elem.id}`}>
-														 <li>
-															 {new Date(elem.screening_start).toLocaleTimeString("en-US", options)}
-														 </li>
-													 </Link>
-													 : null;
+														? <Link key={elem.id} to={`/showtimes/${elem.id}`}>
+															<li>
+																{new Date(elem.screening_start).toLocaleTimeString("en-US", options)}
+															</li>
+														</Link>
+														: null;
 											 })}
 										 </ul>
 									 );

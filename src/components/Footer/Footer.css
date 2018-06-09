@@ -9,7 +9,13 @@
   height: 10vh;
 }
 .footer p {
-  margin: 0;
+  margin: 0 20px;
+}
+
+@media (max-width: 580px) {
+  p {
+    font-size: 12px;
+  }
 }
 
 /*# sourceMappingURL=Footer.css.map */

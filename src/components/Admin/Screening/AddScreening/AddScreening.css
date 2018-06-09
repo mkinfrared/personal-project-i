@@ -2,7 +2,7 @@
 .add-screening {
   margin-top: 50px;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   width: 75%;
@@ -10,6 +10,7 @@
 .add-screening select, .add-screening input {
   height: 33px;
   margin-left: 0;
+  margin-bottom: 10px;
   border-collapse: collapse;
   font: 14px "Roboto";
   margin-right: 5px;
@@ -40,6 +41,12 @@
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
   cursor: pointer;
   border-radius: 50%;
+}
+
+@media (max-width: 400px) {
+  .add-screening .date-time-input .m-input-moment {
+    left: -30px;
+  }
 }
 
 /*# sourceMappingURL=AddScreening.css.map */

@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Slides from './Slides/Slides';
 import Arrows from './Arrows/Arrows';
+import Dots from './Dots/Dots';
 import {connect} from 'react-redux';
 import {changeMaxCount, changeCurrentIndex} from '../../../ducks/slider_reducer';
 import {updateMoviesOnScreen} from '../../../ducks/screening_reducer';
@@ -13,8 +14,9 @@ class Slider extends Component {
 			slides: []
 		};
 
-		this.handleArrowClick = this.handleArrowClick.bind(this);
-		this.timer = '';
+		this.handleClick    = this.handleClick.bind(this);
+		this.handleDotClick = this.handleDotClick.bind(this);
+		this.timer          = '';
 	}
 
 	componentWillMount() {
@@ -37,14 +39,22 @@ class Slider extends Component {
 
 	componentDidMount() {
 		clearTimeout(this.timer);
-		this.handleArrowClick(this.props.currentIndex);
+		this.handleClick(this.props.currentIndex);
 	}
 
 	componentWillUnmount() {
 		clearTimeout(this.timer);
 	}
 
-	handleArrowClick(num) {
+	handleDotClick(num) {
+		clearTimeout(this.timer);
+		this.props.changeCurrentIndex(num);
+		this.timer = setTimeout(() => {
+			this.handleClick(1)
+		}, 5400);
+	}
+
+	handleClick(num) {
 		clearTimeout(this.timer);
 
 		const {currentIndex, maxCount, changeCurrentIndex} = this.props;
@@ -61,17 +71,22 @@ class Slider extends Component {
 
 
 		this.timer = setTimeout(() => {
-			this.handleArrowClick(1)
+			this.handleClick(1)
 		}, 5400);
 	}
 
 	render() {
-		const {slides} = this.state;
+		const {slides}                 = this.state;
+		const {currentIndex, maxCount} = this.props;
 
 		return (
 			<div className="slider" ref="slider">
 				{slides}
-				<Arrows handleArrowClick={this.handleArrowClick}/>
+				<Arrows handleArrowClick={this.handleClick}/>
+				<Dots slidesCount={slides.length}
+					  currentIndex={currentIndex}
+					  maxCount={maxCount}
+					  handleDotClick={this.handleDotClick}/>
 			</div>
 		);
 	}

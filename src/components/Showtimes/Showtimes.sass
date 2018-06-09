@@ -25,25 +25,28 @@
 		margin-bottom: 10px
 	.showtime-card
 		width: 90%
-		height: 450px
 		margin: 0 auto 50px
 		display: flex
 		flex-wrap: wrap
 		box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5)
-		background-color: #000000
+		//background-color: #000000
+		overflow: hidden
+		position: relative
 		color: #FFFFFF
 		hr
 			background-color: $accent-color
 			margin-bottom: 50px
-		div
+		.showtime-poster
 			text-align: center
 			height: 100%
+			z-index: 1
 			img
-				height: 100%
+				height: 450px
 		.showtime-info
 			text-align: center
 			flex-grow: 2
 			padding: 40px
+			background-color: #000000
 			ul
 				text-align: left
 				display: flex
@@ -66,3 +69,16 @@
 				a
 					text-decoration: none
 					color: #FFFFFF
+@media (max-width: 750px)
+	.showtimes
+		.showtime-card
+			flex-direction: column
+			//.????showtime-poster:before
+			//	content: ''
+			//	position: fixed
+			//	background: url("https://image.tmdb.org/t/p/original/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg")
+			//	filter: blur(20px)
+			//	z-index: 9
+			.showtime-info
+				flex-grow: 0
+				background-image: url("")

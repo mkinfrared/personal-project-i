@@ -27,7 +27,7 @@
   margin: 0;
 }
 .home-navbar ul li {
-  margin-right: 50px;
+  margin-right: 20px;
 }
 .home-navbar ul li Link, .home-navbar ul li a {
   text-decoration: none;
@@ -45,6 +45,10 @@
 .home-navbar a {
   text-decoration: none;
 }
+.home-navbar .hamburger {
+  outline: none;
+  display: none;
+}
 .home-navbar .logged-in {
   display: flex;
   align-items: center;
@@ -58,23 +62,9 @@
   margin-right: 15px;
 }
 .home-navbar .logged-in .user-block {
-  overflow: hidden;
   display: flex;
   flex-flow: column;
-  height: 100%;
-  position: relative;
-  top: 50%;
-  transform: translateY(-45%);
-  color: #FFFFFF;
-}
-.home-navbar .logged-in .user-block div {
-  overflow: hidden;
-  height: 20px;
-  transition: height 0.4s linear;
-  cursor: pointer;
-}
-.home-navbar .logged-in .user-block div:hover {
-  height: 100%;
+  color: #007BFF;
 }
 .home-navbar .logged-in .user-block p {
   margin-bottom: 5px;
@@ -84,6 +74,62 @@
   display: flex;
   align-items: center;
   height: 100%;
+}
+
+@media (max-width: 990px) {
+  .home-navbar .hamburger {
+    display: block;
+  }
+  .home-navbar ul {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    max-height: 0;
+    overflow: hidden;
+    background-color: #000000;
+  }
+  .home-navbar ul.active-nav {
+    max-height: 1000px;
+    transition: all 1s linear;
+  }
+  .home-navbar ul li, .home-navbar ul .nav-item {
+    margin: 0;
+    border-top: 1px solid #969696;
+  }
+  .home-navbar ul li .nav-link.active, .home-navbar ul .nav-item .nav-link.active {
+    border-radius: 0;
+  }
+  .home-navbar ul li img, .home-navbar ul .nav-item img {
+    position: absolute;
+    right: 20px;
+    height: 35px;
+  }
+  .home-navbar ul li p, .home-navbar ul .nav-item p {
+    display: none;
+  }
+  .home-navbar ul li .user-block, .home-navbar ul .nav-item .user-block {
+    width: 100%;
+  }
+  .home-navbar ul .logged-out {
+    display: block;
+    height: auto;
+  }
+  .home-navbar ul .logged-out a {
+    text-decoration: none;
+    font-family: "Roboto";
+    font-size: 18px;
+    text-transform: uppercase;
+    outline: none;
+    padding: 8px 16px;
+  }
+}
+@media (max-width: 520px) {
+  .home-navbar .logo p {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=Nav.css.map */
