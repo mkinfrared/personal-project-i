@@ -133,6 +133,7 @@ app.delete('/api/screening/:id', sc.deleteScreening);
 app.post('/api/seat/reserve/:screening_id', stc.buyTickets);
 app.get('/api/seat/get/:screening_id', stc.getSeats);
 app.get('/api/ticket/:reservation_id', stc.getTicketInfo);
+app.get('/api/sales', stc.getWeekSales);
 
 // STRIPE CONTROLLER
 

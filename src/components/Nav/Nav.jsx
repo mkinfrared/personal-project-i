@@ -91,6 +91,12 @@ class Nav extends Component {
 							Showtimes
 						</Link>
 					</li>
+					<li>
+						<Link className={'nav-link'} to="/top-sellers"
+							  onClick={(ev) => this.switchActiveTab(ev)}>
+							Top Movies
+						</Link>
+					</li>
 					{(admin) ?
 					 <li>
 						 <Link className={'nav-link'} to="/admin/movie"

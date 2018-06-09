@@ -5,6 +5,7 @@ import Admin from './components/Admin/Admin';
 import Showtimes from './components/Showtimes/Showtimes';
 import TicketPurshase from './components/TicketPurchase/TicketPurchase';
 import Receipt from "./components/TicketPurchase/Receipt/Receipt";
+import TopSellers from './components/TopSellers/TopSellers';
 
 export default (
 	<Switch>
@@ -13,5 +14,6 @@ export default (
 		<Route exact path="/showtimes" component={Showtimes}/>
 		<Route path={`/showtimes/:screening_id`} component={TicketPurshase}/>
 		<Route path={`/receipt/payment-success`} component={Receipt}/>
+		<Route path="/top-sellers" component={TopSellers}/>
 	</Switch>
 )
