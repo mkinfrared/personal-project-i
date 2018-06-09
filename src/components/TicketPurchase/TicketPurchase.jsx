@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
 import _ from 'lodash';
 import axios from 'axios';
+import {Route} from 'react-router-dom';
 import SeatOptions from './SeatOptions/SeatOptions';
 import StripeCheckout from 'react-stripe-checkout';
-import PaymentOptions from './PaymentOptions/PaymentOptions';
 import {connect} from 'react-redux';
-import {updateCurrentScreening} from '../../ducks/screening_reducer';
+import {updateCurrentScreening, updateReservation} from '../../ducks/screening_reducer';
 import './TicketPurchase.css';
 import {ToastContainer, toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
@@ -16,7 +16,6 @@ class TicketPurchase extends Component {
 		this.state = {
 			seatsWanted: [],
 			price      : 12,
-			step       : 0
 		};
 
 		this.addSeatsWanted = this.addSeatsWanted.bind(this);
@@ -43,6 +42,11 @@ class TicketPurchase extends Component {
 		const {seatsWanted} = this.state,
 			  a             = seatsWanted.indexOf(seatID);
 
+		if (!this.props.user) {
+			alert('Please login');
+			return;
+		}
+
 		if (a + 1) {
 			seatsWanted.splice(a, 1);
 			this.setState({seatsWanted});
@@ -58,7 +62,8 @@ class TicketPurchase extends Component {
 	}
 
 	onToken = (token) => {
-		const {price, seatsWanted} = this.state;
+		const {price, seatsWanted} = this.state,
+			  {screening_id}       = this.props.match.params;
 
 		const amount = price * seatsWanted.length;
 
@@ -67,7 +72,14 @@ class TicketPurchase extends Component {
 			token,
 			amount: amount /* the amount actually charged*/
 		})
-			 .then(() => this.props.history.push('/payment-success'))
+			 .then(() => {
+				 axios.post(`/api/seat/reserve/${screening_id}`, {seatsWanted})
+					  .then((resp) => {
+						  this.props.updateReservation(resp.data[0].reservation_id);
+						  this.props.history.push(`/receipt/payment-success`)
+					  })
+					  .catch((err) => console.dir(err));
+			 })
 			 .catch((err) => console.log(err));
 	};
 
@@ -75,16 +87,15 @@ class TicketPurchase extends Component {
 		const {seatsWanted}  = this.state,
 			  {screening_id} = this.props.match.params;
 
-		axios.post(`/api/seat/reserve/${screening_id}`, {seatsWanted})
-			 .then(() => {
-				 toast.success('SUCCESS', {autoClose: 3000});
-				 setTimeout(() => this.props.history.push('/'), 3100);
-			 })
-			 .catch((err) => console.dir(err));
+
 	}
 
 	render() {
-		const {currentScreening, step} = this.state;
+		const {currentScreening, seatsWanted, price} = this.state;
+		const {screening_id}                         = this.props.currentScreening[0] || {};
+		console.log(screening_id);
+
+		const amount = price * seatsWanted.length;
 
 		const options = {
 			year  : 'numeric',
@@ -93,19 +104,25 @@ class TicketPurchase extends Component {
 			hour  : '2-digit',
 			minute: '2-digit'
 		};
-		console.log(this.props);
+
 		return (
 			<div className="ticket-purchase">
-				<h2>{(currentScreening) ? currentScreening[0].movie_title : null}</h2>
-				<h3>{(currentScreening)
-					 ? new Date(currentScreening[0].screening_start).toLocaleDateString("en-US", options)
-					 : null}
-				</h3>
-				{(step === 0) ?
-				 <SeatOptions currentScreening={currentScreening}
-							  addSeatsWanted={this.addSeatsWanted}/> :
-				 <PaymentOptions/>}
-				<StripeCheckout token={this.onToken} stripeKey={'pk_test_wBkuXuLvbwt2XNQFdNXNNqeb'}/>
+				<div className="screening-info">
+					<h2>{(currentScreening) ? currentScreening[0].movie_title : null}</h2>
+					<h3>{(currentScreening)
+						 ? new Date(currentScreening[0].screening_start).toLocaleDateString("en-US", options)
+						 : null}
+					</h3>
+					<div className="seat-options-wrapper">
+						<SeatOptions currentScreening={currentScreening}
+									 addSeatsWanted={this.addSeatsWanted}/>
+					</div>
+				</div>
+				<div className="payment-container">
+					<p>Payment Due: ${amount}</p>
+					<StripeCheckout token={this.onToken}
+									stripeKey={'pk_test_wBkuXuLvbwt2XNQFdNXNNqeb'}/>
+				</div>
 				<ToastContainer/>
 			</div>
 		);
@@ -113,10 +130,14 @@ class TicketPurchase extends Component {
 
 }
 
-function mapStateToProps({showtimes}) {
-	const {currentScreening} = showtimes;
+function mapStateToProps({showtimes, users}) {
+	const {currentScreening} = showtimes,
+		  {user}             = users;
 
-	return {currentScreening};
+	return {currentScreening, user};
 }
 
-export default connect(mapStateToProps, {updateCurrentScreening})(TicketPurchase);
+export default connect(mapStateToProps, {
+	updateCurrentScreening,
+	updateReservation
+})(TicketPurchase);

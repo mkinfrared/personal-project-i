@@ -7,7 +7,8 @@ const initialState = {
 	currentScreening: [],
 	currentMovieInfo: {},
 	showtimeMovies  : [],
-	comingSoonMovies: []
+	comingSoonMovies: [],
+	reservation     : []
 };
 
 const UPDATE_MOVIES_ONSCREEN    = 'UPDATE_MOVIES_ONSCREEN',
@@ -16,7 +17,8 @@ const UPDATE_MOVIES_ONSCREEN    = 'UPDATE_MOVIES_ONSCREEN',
 	  UPDATE_CURRENT_MOVIE_INFO = 'UPDATE_CURRENT_MOVIE_INFO',
 	  UPDATE_SHOWTIME_MOVIES    = 'UPDATE_SHOWTIME_MOVIES',
 	  UPDATE_COMING_SOON        = 'UPDATE_COMING_SOON',
-	  UPDATE_CURRENT_SCREENING  = 'UPDATE_CURRENT_SCREENING';
+	  UPDATE_CURRENT_SCREENING  = 'UPDATE_CURRENT_SCREENING',
+	  UPDATE_SEATS_WANTED       = 'UPDATE_SEATS_WANTED';
 
 export default function screeningReducer(state = initialState, action) {
 	switch (action.type) {
@@ -34,6 +36,8 @@ export default function screeningReducer(state = initialState, action) {
 			return Object.assign({}, state, {comingSoonMovies: action.payload});
 		case UPDATE_CURRENT_SCREENING + '_FULFILLED':
 			return Object.assign({}, state, {currentScreening: action.payload});
+		case UPDATE_SEATS_WANTED:
+			return Object.assign({}, state, {reservation: action.payload});
 		default:
 			return state;
 	}
@@ -118,5 +122,12 @@ export function updateCurrentScreening(screeningID) {
 	return {
 		type   : UPDATE_CURRENT_SCREENING,
 		payload: screeningInfo
+	}
+}
+
+export function updateReservation(reservation_id) {
+	return {
+		type   : UPDATE_SEATS_WANTED,
+		payload: reservation_id
 	}
 }

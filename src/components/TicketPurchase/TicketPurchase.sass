@@ -3,11 +3,21 @@
 .ticket-purchase
 	text-align: center
 	padding: 10px
+	.payment-container
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		button
+			width: 100px
+	.seat-options-wrapper
+		max-width: 100vw
+		overflow-x: scroll
+		padding: 0 10vw
 	.seat-options
-		width: 700px
-		//min-width: 576px
+		//width: 700px
+		min-width: 576px
 		margin: 0 auto 50px
-		overflow-x: auto
 		ul
 			display: flex
 			justify-content: space-between

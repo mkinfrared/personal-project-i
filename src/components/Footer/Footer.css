@@ -1,12 +1,15 @@
 .footer {
-  min-height: 100px;
   background-color: #007BFF;
-  margin: 0;
+  margin: 50px 0 0 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: #FFFFFF;
   padding: 40px;
+  height: 10vh;
+}
+.footer p {
+  margin: 0;
 }
 
 /*# sourceMappingURL=Footer.css.map */

@@ -12,11 +12,11 @@
 .arrows .fas:hover {
   opacity: 1;
 }
-.arrows .fa-chevron-circle-left {
-  left: 30px;
+.arrows .fa-chevron-left {
+  left: 10px;
 }
-.arrows .fa-chevron-circle-right {
-  right: 30px;
+.arrows .fa-chevron-right {
+  right: 10px;
 }
 
 /*# sourceMappingURL=Arrows.css.map */

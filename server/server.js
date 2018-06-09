@@ -102,6 +102,11 @@ app.get('/auth/me', (req, res) => {
 	}
 });
 
+app.get('/auth/logout', (req, res) => {
+	req.logout();
+	res.redirect('/');
+});
+
 // MOVIE CONTROLLERS
 
 app.post('/api/movies/add_movie', mc.addMovie);
@@ -127,6 +132,7 @@ app.delete('/api/screening/:id', sc.deleteScreening);
 
 app.post('/api/seat/reserve/:screening_id', stc.buyTickets);
 app.get('/api/seat/get/:screening_id', stc.getSeats);
+app.get('/api/ticket/:reservation_id', stc.getTicketInfo);
 
 // STRIPE CONTROLLER
 
@@ -134,7 +140,6 @@ app.post('/api/payment', (req, res, next) => {
 	let {amount} = req.body;
 
 	amount = parseFloat(amount).toFixed(2) * 100;
-	// amount = parseInt(amount);
 
 	console.log(amount);
 

@@ -1,11 +1,19 @@
+.admin {
+  min-height: calc(80vh - 50px);
+}
 .admin .sub-navigation ul {
   margin: 0 auto;
   width: 75%;
   display: flex;
   justify-content: space-around;
-  text-transform: uppercase; }
-  .admin .sub-navigation ul li a {
-    color: #FFFFFF;
-    text-decoration: none; }
+  text-transform: uppercase;
+}
+.admin .sub-navigation ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.admin .sub-navigation ul li .active {
+  text-decoration: underline;
+}
 
 /*# sourceMappingURL=Admin.css.map */

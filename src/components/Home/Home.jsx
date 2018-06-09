@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Slider from './Slider/Slider';
 import TodayScreen from './TodayScreen/TodayScreen';
+import AdScreen from './AdScreen/AdScreen';
 import {connect} from 'react-redux';
 import {urlChange} from '../../ducks/urls_reducer';
 
@@ -22,6 +23,7 @@ class Home extends Component {
 			<div className="home">
 				<Slider/>
 				<TodayScreen/>
+				<AdScreen/>
 			</div>
 		);
 	}

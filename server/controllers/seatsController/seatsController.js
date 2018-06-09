@@ -21,7 +21,7 @@ module.exports = {
 		const {screening_id} = req.params,
 			  {seatsWanted}  = req.body;
 
-		db.seatDB.createTicket([screening_id, [...seatsWanted]])
+		db.seatDB.createTicket([screening_id, seatsWanted])
 		  .then((resp) => {
 			  if (resp.length) {
 				  res.status(200).send(resp);
@@ -33,5 +33,15 @@ module.exports = {
 			  res.status(500).send(err);
 			  console.error(err);
 		  });
+	},
+
+	getTicketInfo: (req, res, next) => {
+		const db = req.app.get('db');
+
+		const {reservation_id} = req.params;
+
+		db.seatDB.getTicket([reservation_id])
+		  .then((ticket) => res.status(200).send(ticket))
+		  .catch((err) => res.status(500).send(err));
 	}
 };

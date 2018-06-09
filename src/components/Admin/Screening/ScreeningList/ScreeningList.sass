@@ -1,7 +1,7 @@
 @import "../../../variables"
 
 .screening-list
-	width: 75%
+	width: 75vw
 	border-collapse: collapse
 	border-spacing: 0
 	margin: 20px auto 0
@@ -13,12 +13,6 @@
 			text-align: center
 			border: 1px solid #000000
 			font: bold 16px 'Roboto'
-			&:nth-child(1)
-				width: 5%
-			&:nth-child(3)
-				width: 10%
-			&:nth-child(4)
-				width: 20%
 	tbody
 		tr
 			position: relative
@@ -28,17 +22,17 @@
 			vertical-align: center
 			&:nth-child(2)
 				text-align: left
+			//&:nth-child(4)
+			//	border-right: 1px solid #000000
 			&:last-child
-				background-color: #FFFFFF
-				border: none
-				text-align: left
-				position: absolute
+				//background-color: #FFFFFF
+				//border: none
+				//border-right: none
+				border-top: 1px solid #32383e
+				//border-bottom: none
+				text-align: center
+				//position: absolute
 				.fas
-					margin-right: 5px
 					font-size: 20px
 					cursor: pointer
 					color: #DC3545
-					opacity: 0
-					transition: opacity 0.15s linear
-		tr:hover .fas
-			opacity: 1

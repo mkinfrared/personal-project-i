@@ -2,10 +2,23 @@
   text-align: center;
   padding: 10px;
 }
+.ticket-purchase .payment-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ticket-purchase .payment-container button {
+  width: 100px;
+}
+.ticket-purchase .seat-options-wrapper {
+  max-width: 100vw;
+  overflow-x: scroll;
+  padding: 0 10vw;
+}
 .ticket-purchase .seat-options {
-  width: 700px;
+  min-width: 576px;
   margin: 0 auto 50px;
-  overflow-x: auto;
 }
 .ticket-purchase .seat-options ul {
   display: flex;

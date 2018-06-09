@@ -25,13 +25,12 @@ class Nav extends Component {
 		if (nextProps.currentURL === '/') {
 			this.positionStyle = {
 				position: 'absolute',
-				opacity: 0.8
+				opacity : 0.8
 			}
 		} else {
 			this.positionStyle = {};
 		}
 	}
-
 
 	loggedIn() {
 		const {user} = this.props;
@@ -42,7 +41,10 @@ class Nav extends Component {
 				<div className="user-block">
 					<div>
 						<p className="username">{user.username}</p>
-						<p className="log-out">Log Out</p>
+						<a className="log-out"
+						   href={process.env.REACT_APP_LOGOUT}>
+							Log Out
+						</a>
 					</div>
 				</div>
 			</div>
@@ -50,11 +52,23 @@ class Nav extends Component {
 	}
 
 	loggedOut() {
-		return <a href={process.env.REACT_APP_LOGIN}>Login</a>
+		return (
+			<div className="logged-out">
+				<a href={process.env.REACT_APP_LOGIN}>Login</a>
+			</div>
+		)
+	}
+
+	switchActiveTab(ev) {
+		const prevActiveTab    = this.refs['nav-fill'].getElementsByClassName('active')[0];
+		const currentActiveTab = ev.target;
+
+		prevActiveTab.classList.remove('active');
+		currentActiveTab.classList.add('active');
 	}
 
 	render() {
-		const {user} = this.props;
+		const {user}  = this.props;
 		const {admin} = this.props.user || false;
 
 		return (
@@ -63,18 +77,28 @@ class Nav extends Component {
 					<img src="/images/logo-without-url.png" alt="logo"/>
 					<p>Majestic</p>
 				</div>
-				<ul className="nav-pills nav-fill">
+				<ul className="nav-pills nav-fill"
+					ref="nav-fill">
 					<li className="nav-item">
-						<Link className={'nav-link active'} to="/">Home</Link>
+						<Link className={'nav-link active'} to="/"
+							  onClick={(ev) => this.switchActiveTab(ev)}>
+							Home
+						</Link>
 					</li>
 					<li>
-						<Link to="/showtimes">Showtimes</Link>
+						<Link className={'nav-link'} to="/showtimes"
+							  onClick={(ev) => this.switchActiveTab(ev)}>
+							Showtimes
+						</Link>
 					</li>
 					{(admin) ?
-						<li>
-							<Link to="/admin/movie">Admin</Link>
-						</li>
-						: null}
+					 <li>
+						 <Link className={'nav-link'} to="/admin/movie"
+							   onClick={(ev) => this.switchActiveTab(ev)}>
+							 Admin
+						 </Link>
+					 </li>
+							 : null}
 				</ul>
 				{(user) ? this.loggedIn() : this.loggedOut()}
 			</nav>
