@@ -29,6 +29,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 40px;
+}
+.ticket-purchase .payment-container p {
+  font-weight: bold;
 }
 .ticket-purchase .payment-container button {
   width: 100px;

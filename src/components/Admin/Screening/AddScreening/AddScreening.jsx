@@ -104,9 +104,7 @@ class AddScreening extends Component {
 					 return <AuditoriumOptions key={elem.id} data={elem}/>
 				 });
 
-				 this.setState({
-					 auditoriumsList: [...data]
-				 });
+				 this.setState({auditoriumsList: [...data]});
 			 })
 			 .catch((err) => console.log(err));
 	}

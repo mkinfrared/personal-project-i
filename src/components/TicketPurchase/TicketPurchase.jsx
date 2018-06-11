@@ -117,7 +117,7 @@ class TicketPurchase extends Component {
 					</div>
 				</div>
 				<div className="payment-container">
-					<p>Payment Due: ${amount}</p>
+					<p>Total: ${amount}</p>
 					<StripeCheckout token={this.onToken}
 									stripeKey={'pk_test_wBkuXuLvbwt2XNQFdNXNNqeb'}/>
 				</div>

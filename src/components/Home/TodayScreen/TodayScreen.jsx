@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
 import {updateShowtimeMovies, updateComingSoon} from '../../../ducks/screening_reducer';
 import './TodayScreen.css'
@@ -22,10 +23,12 @@ class TodayScreen extends Component {
 
 		showtimeMovies = showtimeMovies.map((movie) => {
 			return (
-				<div key={movie.id} className="movie-card">
-					<img src={movie.poster_pic} alt={movie.title}/>
-					<p>{movie.title}</p>
-				</div>
+				<Link key={movie.id} to={`/movie/${movie.id}`}>
+					<div className="movie-card">
+						<img src={movie.poster_pic} alt={movie.title}/>
+						<p>{movie.title}</p>
+					</div>
+				</Link>
 			);
 		});
 

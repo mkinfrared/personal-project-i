@@ -9,7 +9,9 @@ export default function SeatOptions(props) {
 	let seatObj = _.groupBy(currentScreening, 'row_number');
 
 	for (const seatObjKey in seatObj) {
-		const a = seatObj[seatObjKey];
+		const a = seatObj[seatObjKey].sort((a, b) => a.seat_number - b.seat_number);
+
+		console.log(a);
 
 		seats.push(
 			<ul key={`${a[0].screening_id}` + `${a[0].row_number}`}>

@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 import './Slides.css'
 
 function Slides(props) {
-	const {banner_pic, tagline, title, id, imdb_rating} = props.movie;
+	const {banner_pic, tagline, title, id} = props.movie;
 	const background = {
 		backgroundImage   : `url(${banner_pic})`,
 		backgroundSize    : 'cover',

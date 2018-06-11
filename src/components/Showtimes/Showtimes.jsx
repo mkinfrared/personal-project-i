@@ -9,9 +9,7 @@ import './Showtimes.css'
 class Showtimes extends Component {
 	constructor(props) {
 		super(props);
-
 		this.state = {};
-
 	}
 
 	componentWillMount() {
@@ -49,7 +47,7 @@ class Showtimes extends Component {
 					// filter         : 'brightness(60%)',
 					// opacity        : '0.9',
 					width             : '110%',
-					transform         : 'scale(1.1)',
+					transform         : 'scale(1.25)',
 					overflow          : 'hidden',
 					height            : '470px',
 					position          : 'absolute',
@@ -64,7 +62,9 @@ class Showtimes extends Component {
 					 <div className="showtime-card" key={showObj[0].movie_id}>
 						 <div className="showtime-poster">
 							 <div className="background-poster" style={style}></div>
-							 <img src={showObj[0].poster_pic} alt=""/>
+							 <Link to={`/movie/${showObj[0].movie_id}`}>
+								 <img src={showObj[0].poster_pic} alt=""/>
+							 </Link>
 						 </div>
 						 <div className="showtime-info">
 							 <h4>{showObj[0].title}</h4>
