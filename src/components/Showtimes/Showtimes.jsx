@@ -52,7 +52,7 @@ class Showtimes extends Component {
 					zIndex         : '-1',
 					left           : '-10px',
 					top            : '-10px'
-				}
+				};
 
 				let auditoriumName = Object.keys(_.groupBy(display[displayKey], 'name'));
 

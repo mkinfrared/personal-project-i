@@ -35,6 +35,7 @@
   overflow: hidden;
   position: relative;
   color: #FFFFFF;
+  z-index: 2;
 }
 .showtimes .showtime-card hr {
   background-color: #007BFF;
