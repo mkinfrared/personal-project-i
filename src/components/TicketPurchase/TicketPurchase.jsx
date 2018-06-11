@@ -92,7 +92,6 @@ class TicketPurchase extends Component {
 	render() {
 		const {currentScreening, seatsWanted, price} = this.state;
 		const {screening_id}                         = this.props.currentScreening[0] || {};
-		console.log(screening_id);
 
 		const amount = price * seatsWanted.length;
 

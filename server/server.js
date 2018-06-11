@@ -150,6 +150,7 @@ app.post('/api/payment', (req, res, next) => {
 		source     : req.body.token.id,
 		description: 'Test charge from Majestic app'
 	}, (err, charge) => {
+		console.error(err, charge);
 		if (err) {
 			res.status(500).send(err);
 		}
