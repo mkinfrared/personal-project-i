@@ -5,7 +5,6 @@ import './Slides.css'
 
 function Slides(props) {
 	const {banner_pic, tagline, title, id, imdb_rating} = props.movie;
-	console.log(imdb_rating)
 	const background = {
 		backgroundImage   : `url(${banner_pic})`,
 		backgroundSize    : 'cover',

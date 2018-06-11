@@ -1,5 +1,6 @@
 import React from 'react';
 import {Route, Switch} from 'react-router-dom';
+import {TransitionGroup, CSSTransition} from 'react-transition-group';
 import Home from './components/Home/Home';
 import Admin from './components/Admin/Admin';
 import Showtimes from './components/Showtimes/Showtimes';
