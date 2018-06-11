@@ -1,0 +1,116 @@
+@import "../variables.sass"
+
+.movie-info
+	min-height: 80vh
+	position: relative
+	width: 100%
+	height: 100%
+	z-index: -5
+	background-blend-mode: screen
+	background-position: center
+	background-size: cover
+	padding-bottom: 20px
+
+
+	&:after
+		content: ''
+		width: 100%
+		height: 100%
+		background-color: #FFFFFF
+		z-index: -1
+		position: absolute
+		top: 0
+		left: 0
+		opacity: 0.94
+
+	h2
+		text-align: center
+		background-color: $accent-color
+		color: #FFFFFF
+		text-transform: uppercase
+		font: 32px 'Raleway'
+		padding: 20px 0
+		@media(max-width: 645px)
+			font-size: 24px
+		@media(max-width: 500px)
+			font-size: 18px
+
+	.movie-info__wrapper
+		display: flex
+		padding: 50px 50px 0
+		@media(max-width: 990px)
+			flex-wrap: wrap
+		@media(max-width: 940px)
+			flex-direction: column
+			justify-content: center
+			align-items: center
+
+		.movie-poster
+			margin-right: 20px
+			@media(max-width: 940px)
+				margin-right: 0
+
+			img
+				height: 350px
+				@media(max-width: 940px)
+					height: 500px
+					margin-bottom: 20px
+
+
+
+		.movie-details
+			@media(max-width: 940px)
+				width: 95%
+			table
+				margin-right: 20px
+				font: 16px 'Roboto'
+				@media(max-width: 940px)
+					margin: 0
+					width: 100%
+
+
+				tr
+					border-bottom: 1px dotted #000000
+
+					td
+						padding: 15px 10px
+
+					td:first-child
+						white-space: nowrap
+						color: $accent-color
+
+	.description
+		h3
+			text-align: center
+			margin-bottom: 20px
+		padding: 50px
+		text-align: justify
+		font: 16px 'Roboto'
+		line-height: 1.6
+		@media(max-width: 940px)
+			width: 95%
+			margin: 0 auto
+			padding: 0 50px
+
+	.cast
+		ul
+			@media(max-width: 990px)
+			margin-top: 20px
+			@media (max-width: 940px)
+				width: 95%
+				margin: 20px auto
+				display: flex
+				justify-content: space-between
+				flex-wrap: wrap
+			li
+				font: 16px 'Roboto'
+				margin-bottom: 10px
+				@media(max-width: 990px)
+					display: inline-block
+					margin-right: 3px
+				@media (max-width: 645px)
+					width: 49%
+					white-space: nowrap
+				@media (max-width: 500px)
+					font-size: 14px
+					width: 40%

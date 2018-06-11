@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
-import _ from 'lodash';
 import axios from 'axios';
-import {Route} from 'react-router-dom';
 import SeatOptions from './SeatOptions/SeatOptions';
 import StripeCheckout from 'react-stripe-checkout';
 import {connect} from 'react-redux';

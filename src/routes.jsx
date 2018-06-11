@@ -6,6 +6,7 @@ import Showtimes from './components/Showtimes/Showtimes';
 import TicketPurshase from './components/TicketPurchase/TicketPurchase';
 import Receipt from "./components/TicketPurchase/Receipt/Receipt";
 import TopSellers from './components/TopSellers/TopSellers';
+import MovieInfo from './components/MovieInfo/MovieInfo';
 
 export default (
 	<Switch>
@@ -15,5 +16,6 @@ export default (
 		<Route path={`/showtimes/:screening_id`} component={TicketPurshase}/>
 		<Route path={`/receipt/payment-success`} component={Receipt}/>
 		<Route path="/top-sellers" component={TopSellers}/>
+		<Route path={`/movie/:movie_id`} component={MovieInfo}/>
 	</Switch>
 )

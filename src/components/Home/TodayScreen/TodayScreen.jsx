@@ -18,7 +18,7 @@ class TodayScreen extends Component {
 	}
 
 	componentWillReceiveProps(nextProps) {
-		let {showtimeMovies, comingSoonMovies} = nextProps;
+		let {showtimeMovies} = nextProps;
 
 		showtimeMovies = showtimeMovies.map((movie) => {
 			return (
@@ -41,9 +41,6 @@ class TodayScreen extends Component {
 					<li className="nav-item">
 						<a className="nav-link active" href="#">Now playing</a>
 					</li>
-					<li className="nav-item">
-						<a className="nav-link" href="#">Coming soon</a>
-					</li>
 				</ul>
 				<div className="movie-cards-block">
 					<div className="now-playing">
@@ -60,9 +57,9 @@ class TodayScreen extends Component {
 }
 
 function mapStateToProps({showtimes}) {
-	const {showtimeMovies, comingSoonMovies} = showtimes;
+	const {showtimeMovies} = showtimes;
 
-	return {showtimeMovies, comingSoonMovies};
+	return {showtimeMovies};
 }
 
 export default connect(mapStateToProps, {

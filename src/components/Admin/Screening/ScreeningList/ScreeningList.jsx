@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import axios from 'axios';
-import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
 import {updateScreenings} from '../../../../ducks/screening_reducer';
 import {ToastContainer, toast} from 'react-toastify';
@@ -34,8 +33,6 @@ class ScreeningList extends Component {
 	}
 
 	rowGenerator(screeningArray) {
-		const {isEditing} = this.state;
-
 		const screeningList = screeningArray.map((screening, index) => {
 			const {id, title, name, screening_start} = screening;
 
