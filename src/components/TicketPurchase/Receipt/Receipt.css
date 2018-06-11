@@ -1,0 +1,15 @@
+.receipt {
+  text-align: center;
+  font-family: monospace;
+  padding: 40px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  width: 50%;
+  margin: 50px auto;
+  border: 2px dashed #B7B7B7;
+  min-height: calc(80vh - 100px);
+}
+.receipt p {
+  font-size: 32px;
+}
+
+/*# sourceMappingURL=Receipt.css.map */

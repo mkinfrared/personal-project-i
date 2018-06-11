@@ -1,0 +1,14 @@
+.dots {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.dots .far, .dots .fas {
+  font-size: 20px;
+  color: #FFFFFF;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=Dots.css.map */

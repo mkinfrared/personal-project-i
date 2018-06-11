@@ -12,17 +12,16 @@
 .arrows .fas:hover {
   opacity: 1;
 }
+@media (max-width: 640px) {
+  .arrows .fas {
+    font-size: 24px;
+  }
+}
 .arrows .fa-chevron-left {
   left: 10px;
 }
 .arrows .fa-chevron-right {
   right: 10px;
-}
-
-@media (max-width: 640px) {
-  .arrows .fas {
-    display: none;
-  }
 }
 
 /*# sourceMappingURL=Arrows.css.map */

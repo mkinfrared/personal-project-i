@@ -1,0 +1,43 @@
+.top-sellers {
+  padding: 0;
+  text-align: center;
+}
+@media (max-width: 450px) {
+  .top-sellers {
+    min-height: 80vh;
+  }
+}
+.top-sellers h2 {
+  text-transform: uppercase;
+  width: 100%;
+  font: 32px "Raleway";
+  background-color: #007BFF;
+  color: #FFFFFF;
+  padding: 20px 0;
+}
+@media (max-width: 820px) {
+  .top-sellers h2 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 600px) {
+  .top-sellers h2 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 400px) {
+  .top-sellers h2 {
+    font-size: 14px;
+  }
+}
+.top-sellers .chart {
+  padding: 40px;
+  min-height: calc(80vh - 86px);
+}
+@media (max-width: 450px) {
+  .top-sellers .chart {
+    padding: 3px;
+  }
+}
+
+/*# sourceMappingURL=TopSellers.css.map */

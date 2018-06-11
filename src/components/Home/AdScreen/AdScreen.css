@@ -1,0 +1,13 @@
+.ad-screen {
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+.ad-screen h2 {
+  text-transform: uppercase;
+  font-size: 72px;
+}
+
+/*# sourceMappingURL=AdScreen.css.map */
