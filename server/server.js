@@ -153,8 +153,9 @@ app.post('/api/payment', (req, res, next) => {
 		console.error(err, charge);
 		if (err) {
 			res.status(500).send(err);
+		} else {
+			res.status(200).send(charge);
 		}
-		res.status(200).send(charge);
 		// if (err && err.type === 'StripeCardError') {
 		//   // The card has been declined
 		// }

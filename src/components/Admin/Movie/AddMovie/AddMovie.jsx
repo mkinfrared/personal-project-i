@@ -101,7 +101,7 @@ export default class AddMovie extends Component {
 					<div>
 						<p>cast:</p>
 						<textarea className="form-control" onChange={(ev) => this.handleChange(ev)} value={actors}
-								  type="text" name="cast"/></div>
+								  type="text" name="actors"/></div>
 					<div>
 						<p>description:</p>
 						<textarea className="form-control" onChange={(ev) => this.handleChange(ev)} value={description}
