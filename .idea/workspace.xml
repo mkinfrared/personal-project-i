@@ -3,18 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="8e64669d-6fcd-4945-8484-4535f65bec04" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/movieDB/getMoviesWithShowtimes.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/movieDB/getMoviesWithShowtimes.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/Slider/Slides/Slides.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Slider/Slides/Slides.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/Slider/Slides/Slides.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Slider/Slides/Slides.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/Slider/Slides/Slides.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Slider/Slides/Slides.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/TodayScreen/TodayScreen.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/TodayScreen/TodayScreen.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/TodayScreen/TodayScreen.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/TodayScreen/TodayScreen.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/TodayScreen/TodayScreen.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/TodayScreen/TodayScreen.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/TodayScreen/TodayScreen.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/TodayScreen/TodayScreen.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Showtimes/Showtimes.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Showtimes/Showtimes.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Showtimes/Showtimes.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Showtimes/Showtimes.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Showtimes/Showtimes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Showtimes/Showtimes.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Showtimes/Showtimes.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Showtimes/Showtimes.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TicketPurchase/Receipt/Receipt.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TicketPurchase/Receipt/Receipt.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TicketPurchase/Receipt/Receipt.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TicketPurchase/Receipt/Receipt.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TicketPurchase/Receipt/Receipt.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TicketPurchase/Receipt/Receipt.sass" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -129,11 +120,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TicketPurchase.sass" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TicketPurchase.sass" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/TicketPurchase/TicketPurchase.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+            <state relative-caret-position="240">
+              <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Receipt.sass" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/TicketPurchase/Receipt/Receipt.sass">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Receipt.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/TicketPurchase/Receipt/Receipt.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-844">
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -215,7 +226,6 @@
         <option value="$PROJECT_DIR$/db/seatDB/createTicket.sql" />
         <option value="$PROJECT_DIR$/src/ducks/screening_reducer.js" />
         <option value="$PROJECT_DIR$/src/components/TicketPurchase/Receipt/Receipt.jsx" />
-        <option value="$PROJECT_DIR$/src/components/TicketPurchase/Receipt/Receipt.sass" />
         <option value="$PROJECT_DIR$/src/components/Admin/Screening/ScreeningList/ScreeningList.sass" />
         <option value="$PROJECT_DIR$/src/components/Admin/Admin.sass" />
         <option value="$PROJECT_DIR$/src/components/Admin/Admin.jsx" />
@@ -251,6 +261,7 @@
         <option value="$PROJECT_DIR$/src/components/Home/TodayScreen/TodayScreen.sass" />
         <option value="$PROJECT_DIR$/src/components/Showtimes/Showtimes.sass" />
         <option value="$PROJECT_DIR$/src/components/Showtimes/Showtimes.jsx" />
+        <option value="$PROJECT_DIR$/src/components/TicketPurchase/Receipt/Receipt.sass" />
       </list>
     </option>
   </component>
@@ -406,6 +417,14 @@
               <item name="personal-project-i" type="b2602c69:ProjectViewProjectNode" />
               <item name="personal-project-i" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="TicketPurchase" type="462c0819:PsiDirectoryNode" />
+              <item name="Receipt" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="personal-project-i" type="b2602c69:ProjectViewProjectNode" />
+              <item name="personal-project-i" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="ducks" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -517,7 +536,7 @@
       <workItem from="1528390373659" duration="4379000" />
       <workItem from="1528413264602" duration="168000" />
       <workItem from="1528595481121" duration="15726000" />
-      <workItem from="1528672388897" duration="11997000" />
+      <workItem from="1528672388897" duration="13026000" />
     </task>
     <task id="LOCAL-00001" summary="created database schema and file structure">
       <created>1526942514907</created>
@@ -708,11 +727,18 @@
       <option name="project" value="LOCAL" />
       <updated>1528681909514</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="fixed responsiveness">
+      <created>1528689447475</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1528689447475</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="417143000" />
+    <option name="totallyTimeSpent" value="418172000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -725,7 +751,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1691" height="917" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32894737" />
       <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" weight="0.32894737" />
@@ -804,7 +829,8 @@
     <MESSAGE value="trying to add css transitions" />
     <MESSAGE value="fixed showtime display" />
     <MESSAGE value="added responsiveness to ticketPurchase" />
-    <option name="LAST_COMMIT_MESSAGE" value="added responsiveness to ticketPurchase" />
+    <MESSAGE value="fixed responsiveness" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed responsiveness" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -812,20 +838,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/server/controllers/seatsController/seatsController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="54" column="33" selection-start-line="54" selection-start-column="33" selection-end-line="54" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Workshops/Chart-JS/chartjs-sandbox/src/components/ChartDemos/APIDemo/APIDemo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="13" column="47" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="14" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/manifest.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1158,8 +1170,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/TicketPurchase/TicketPurchase.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+        <state relative-caret-position="240">
+          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/TicketPurchase/Receipt/Receipt.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-844">
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/TicketPurchase/Receipt/Receipt.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
         </state>
       </provider>
     </entry>

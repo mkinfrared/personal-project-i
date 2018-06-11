@@ -8,8 +8,54 @@
   border: 2px dashed #B7B7B7;
   min-height: calc(80vh - 100px);
 }
+@media (max-width: 660px) {
+  .receipt {
+    width: 60%;
+  }
+}
+@media (max-width: 520px) {
+  .receipt {
+    width: 70%;
+  }
+}
+@media (max-width: 430px) {
+  .receipt {
+    width: 80%;
+  }
+}
+@media (max-width: 380px) {
+  .receipt {
+    width: 90%;
+  }
+}
 .receipt p {
   font-size: 32px;
+}
+@media (max-width: 850px) {
+  .receipt p {
+    font-size: 18px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 850px) {
+  .receipt h2 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 660px) {
+  .receipt h2 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 850px) {
+  .receipt h3 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 660px) {
+  .receipt h3 {
+    font-size: 18px;
+  }
 }
 
 /*# sourceMappingURL=Receipt.css.map */
