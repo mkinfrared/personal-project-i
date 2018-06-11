@@ -35,7 +35,6 @@
   overflow: hidden;
   position: relative;
   color: #FFFFFF;
-  z-index: 2;
 }
 .showtimes .showtime-card hr {
   background-color: #007BFF;
@@ -54,6 +53,7 @@
   flex-grow: 2;
   padding: 40px;
   background-color: #000000;
+  z-index: 2;
 }
 .showtimes .showtime-card .showtime-info ul {
   text-align: left;
