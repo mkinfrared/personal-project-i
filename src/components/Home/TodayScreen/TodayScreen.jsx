@@ -14,7 +14,7 @@ class TodayScreen extends Component {
 
 	componentWillMount() {
 		this.props.updateShowtimeMovies();
-		this.props.updateComingSoon();
+		// this.props.updateComingSoon();
 	}
 
 	componentWillReceiveProps(nextProps) {

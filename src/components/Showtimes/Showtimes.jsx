@@ -43,16 +43,19 @@ class Showtimes extends Component {
 				const showObj = display[displayKey];
 
 				const style = {
-					backgroundImage: `url("${showObj[0].poster_pic}")`,
-					filter         : 'blur(8px)',
+					backgroundImage   : `url("${showObj[0].poster_pic}")`,
+					backgroundPosition: '50% 50%',
+					filter            : 'blur(40px)',
 					// filter         : 'brightness(60%)',
 					// opacity        : '0.9',
-					width          : '110%',
-					height         : '470px',
-					position       : 'absolute',
-					zIndex         : '-1',
-					left           : '-10px',
-					top            : '-10px'
+					width             : '110%',
+					transform         : 'scale(1.1)',
+					overflow          : 'hidden',
+					height            : '470px',
+					position          : 'absolute',
+					zIndex            : '-1',
+					left              : '-10px',
+					top               : '-10px'
 				};
 
 				let auditoriumName = Object.keys(_.groupBy(display[displayKey], 'name'));

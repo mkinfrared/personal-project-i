@@ -37,6 +37,16 @@
 .showtimes h4 {
   margin-bottom: 10px;
 }
+@media (max-width: 645px) {
+  .showtimes h4 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 500px) {
+  .showtimes h4 {
+    font-size: 18px;
+  }
+}
 .showtimes .showtime-card {
   width: 90%;
   margin: 0 auto 50px;
