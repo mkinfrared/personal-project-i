@@ -44,8 +44,9 @@ class Showtimes extends Component {
 
 				const style = {
 					backgroundImage: `url("${showObj[0].poster_pic}")`,
-					filter         : 'blur(2px)',
-					filter         : 'brightness(80%)',
+					filter         : 'blur(8px)',
+					// filter         : 'brightness(60%)',
+					// opacity        : '0.9',
 					width          : '110%',
 					height         : '470px',
 					position       : 'absolute',
