@@ -71,6 +71,7 @@ class TicketPurchase extends Component {
 			amount: amount /* the amount actually charged*/
 		})
 			 .then(() => {
+				 console.log('CHARGE');
 				 axios.post(`/api/seat/reserve/${screening_id}`, {seatsWanted})
 					  .then((resp) => {
 						  this.props.updateReservation(resp.data[0].reservation_id);

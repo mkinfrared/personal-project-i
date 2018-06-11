@@ -34,6 +34,10 @@
 @media (max-width: 850px) {
   .receipt p {
     font-size: 18px;
+  }
+}
+@media (max-width: 660px) {
+  .receipt p {
     font-size: 14px;
   }
 }
