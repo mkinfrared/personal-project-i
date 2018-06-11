@@ -5,11 +5,22 @@
   color: #000000;
 }
 .showtimes h2 {
+  text-align: center;
+  background-color: #007BFF;
+  color: #FFFFFF;
   text-transform: uppercase;
   font: 32px "Raleway";
-  background-color: #007BFF;
   padding: 20px 0;
-  color: #FFFFFF;
+}
+@media (max-width: 645px) {
+  .showtimes h2 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 500px) {
+  .showtimes h2 {
+    font-size: 18px;
+  }
 }
 .showtimes h2 {
   margin-bottom: 40px;

@@ -2,7 +2,22 @@
 
 .ticket-purchase
 	text-align: center
-	padding: 10px
+	padding: 0
+	min-width: 360px
+	.screening-info
+		h2
+			text-align: center
+			background-color: $accent-color
+			color: #FFFFFF
+			text-transform: uppercase
+			font: 32px 'Raleway'
+			padding: 20px 0
+			@media(max-width: 645px)
+				font-size: 24px
+			@media(max-width: 500px)
+				font-size: 18px
+		h3
+			margin: 20px 0
 	.payment-container
 		display: flex
 		flex-direction: column
@@ -11,13 +26,18 @@
 		button
 			width: 100px
 	.seat-options-wrapper
-		max-width: 100vw
-		overflow-x: scroll
-		padding: 0 10vw
+		//max-width: 100vw
+		//overflow-x: scroll
+		padding: 0 0 0 20px
+		@media (max-width: 600px)
+			padding-left: 0
 	.seat-options
 		//width: 700px
-		min-width: 576px
+		//min-width: 576px
 		margin: 0 auto 50px
+		padding-left: 30px
+		@media (max-width: 600px)
+			padding-left: 10px
 		ul
 			display: flex
 			justify-content: space-between
@@ -26,6 +46,17 @@
 			p
 				margin: 0 auto 0 0
 				font-size: 18px
+				position: relative
+				left: 150px
+				@media (max-width: 990px)
+					left: 100px
+				@media (max-width: 870px)
+					left: 50px
+				@media (max-width: 660px)
+					left: 20px
+				@media(max-width: 440px)
+					font-size: 12px
+					left: 15px
 			li
 				width: 40px
 				height: 40px
@@ -39,6 +70,24 @@
 					margin-left: 20px
 				&:last-child
 					margin-right: auto
+				@media(max-width: 770px)
+					width: 30px
+					height: 30px
+					font-size: 14px
+					&:nth-child(2)
+						margin-left: 5px
+				@media(max-width: 600px)
+					width: 25px
+					height: 25px
+					margin-right: 5px
+				@media(max-width: 440px)
+					width: 20px
+					height: 20px
+					font-size: 12px
+	//@media(max-width: 600px)
+				//	width: 25px
+				//	height: 25px
+				//	font-size: 14px
 	.reserved
 		background-color: $warning-color
 		color: #FFFFFF
