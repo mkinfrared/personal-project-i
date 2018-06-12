@@ -1,27 +1,27 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
-import {updateShowtimeMovies, updateComingSoon} from '../../../ducks/screening_reducer';
+import {updateMoviesOnScreen, updateComingSoon} from '../../../ducks/screening_reducer';
 import './TodayScreen.css'
 
 class TodayScreen extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			showtimeMovies  : [],
+			moviesOnScreen  : [],
 			comingSoonMovies: []
 		}
 	}
 
 	componentWillMount() {
-		this.props.updateShowtimeMovies();
+		this.props.updateMoviesOnScreen();
 		// this.props.updateComingSoon();
 	}
 
 	componentWillReceiveProps(nextProps) {
-		let {showtimeMovies} = nextProps;
+		let {moviesOnScreen} = nextProps;
 
-		showtimeMovies = showtimeMovies.map((movie) => {
+		moviesOnScreen = moviesOnScreen.map((movie) => {
 			return (
 				<Link key={movie.id} to={`/movie/${movie.id}`}>
 					<div className="movie-card">
@@ -32,7 +32,7 @@ class TodayScreen extends Component {
 			);
 		});
 
-		this.setState({showtimeMovies})
+		this.setState({moviesOnScreen})
 	}
 
 
@@ -47,7 +47,7 @@ class TodayScreen extends Component {
 				</ul>
 				<div className="movie-cards-block">
 					<div className="now-playing">
-						{this.state.showtimeMovies}
+						{this.state.moviesOnScreen}
 					</div>
 					<div className="coming-soon">
 					</div>
@@ -60,12 +60,12 @@ class TodayScreen extends Component {
 }
 
 function mapStateToProps({showtimes}) {
-	const {showtimeMovies} = showtimes;
+	const {moviesOnScreen} = showtimes;
 
-	return {showtimeMovies};
+	return {moviesOnScreen};
 }
 
 export default connect(mapStateToProps, {
-	updateShowtimeMovies,
+	updateMoviesOnScreen,
 	updateComingSoon
 })(TodayScreen)
